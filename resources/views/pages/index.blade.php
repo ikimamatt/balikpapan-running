@@ -20,7 +20,7 @@
                     <!-- Logo Container -->
                     <div class="logo-container">
                         <a class="navbar-brand fw-bold" href="#">
-                            <img src="{{ asset('assets/images/Adelux-Logo.png') }}" alt="Logo" class="img-fluid">
+                            <img src="{{ asset('assets/images/running/BCR Logo-01.png') }}" alt="Logo" class="img-fluid" style="height: 50px;">
                         </a>
                     </div>
                 
@@ -32,32 +32,29 @@
                                     <a class="nav-link" href="./index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./about.html">About Us</a>
+                                    <a class="nav-link" href="#about">About Event</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        Booking Court <i class="fa-solid fa-chevron-down"></i>
+                                        Categories <i class="fa-solid fa-chevron-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./booking.html">Booking Court</a></li>
-                                        <li><a class="dropdown-item" href="./event.html">Events</a></li>
-                                        <li><a class="dropdown-item" href="./membership.html">Membership</a></li>
+                                        <li><a class="dropdown-item" href="#">5K Fun Run</a></li>
+                                        <li><a class="dropdown-item" href="#">10K Challenge</a></li>
+                                        <li><a class="dropdown-item" href="#">21K Half Marathon</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        Pages <i class="fa-solid fa-chevron-down"></i>
+                                        Race Info <i class="fa-solid fa-chevron-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./service.html">Our Services</a></li>
-                                        <li><a class="dropdown-item" href="./coaching.html">Coaching</a></li>
-                                        <li><a class="dropdown-item" href="./community.html">Community</a></li>
-                                        <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
-                                        <li><a class="dropdown-item" href="./blog.html">Blog</a></li>
-                                        <li><a class="dropdown-item" href="./single-post.html">Single Post</a></li>
-                                        <li><a class="dropdown-item" href="./404-page.html">404 Error</a></li>
+                                        <li><a class="dropdown-item" href="#">Route Map</a></li>
+                                        <li><a class="dropdown-item" href="#">Rules & Regulations</a></li>
+                                        <li><a class="dropdown-item" href="#">Race Pack Collection</a></li>
+                                        <li><a class="dropdown-item" href="#">FAQ</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -75,8 +72,8 @@
                     <!-- Navbar Social Container -->
                     <div class="navbar-cta-container">
                         <div>
-                            <a href="./contact.html" class="btn btn-accent">
-                                <span class="btn-title">Join The Club</span>
+                            <a href="#" class="btn btn-accent">
+                                <span class="btn-title">Register Now</span>
                                 <span class="icon-circle">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </span>
@@ -97,37 +94,34 @@
             <div class="sidebar">
                 <div class="sidebar-header">
                     <div class="logo">
-                        <img src="{{ asset('assets/images/Adelux-Black-Logo.png') }}" class="logo" alt="Logo">
+                        <img src="{{ asset('assets/images/running/BCR Logo-01.png') }}" class="logo" alt="Logo" style="height: 40px; width: auto;">
                     </div>
                     <button class="close-btn"><span>X</span></button>
                 </div>
                 <ul class="menu">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="#about">About Event</a></li>
                     <li class="sidebar-dropdown">
                         <div class="dropdown-header">
-                            <a href="#">Booking Court</a>
+                            <a href="#">Categories</a>
                             <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
                         </div>
                         <ul class="sidebar-dropdown-menu">
-                            <li><a href="./booking.html">Booking Court</a></li>
-                            <li><a href="./event.html">Event</a></li>
-                            <li><a href="./membership.html">Membership</a></li>
+                            <li><a href="#">5K Fun Run</a></li>
+                            <li><a href="#">10K Challenge</a></li>
+                            <li><a href="#">21K Half Marathon</a></li>
                         </ul>
                     </li>         
                     <li class="sidebar-dropdown">
                         <div class="dropdown-header">
-                            <a href="#">Pages</a>
+                            <a href="#">Race Info</a>
                             <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
                         </div>
                         <ul class="sidebar-dropdown-menu">
-                            <li><a href="./service.html">Our Services</a></li>
-                            <li><a href="./coaching.html">Coaching</a></li>
-                            <li><a href="./community.html">Community</a></li>
-                            <li><a href="./faq.html">FAQ</a></li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./single-post.html">Single Post</a></li>
-                            <li><a href="./404-page.html">404 Error</a></li>
+                            <li><a href="#">Route Map</a></li>
+                            <li><a href="#">Rules & Regulations</a></li>
+                            <li><a href="#">Race Pack Collection</a></li>
+                            <li><a href="#">FAQ</a></li>
                         </ul>
                     </li>   
                     <li class="below-dropdown"><a href="./contact.html">Contact Us</a></li>
@@ -139,98 +133,86 @@
     <!-- Main Section -->
     <main>
         <!-- Banner Home Section -->
-        <div class="section-wrapper pb-0">
-            <div class="banner-home-container" id="banner-slideshow">
-                <div class="slideshow-container">
-                  </div>                  
+        <div class="pb-0" style="padding-top: 0;">
+            <div class="banner-home-container" style="border-radius: 0; background-image: url('{{ asset('assets/images/running/jumbotron.jpg') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.72); z-index: -1;"></div>
                 <div class="hero-container">
-                    <div class="banner-content-container">
-                        <div class="banner-home-top">
-                            <div class="banner-home-title animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                                <div>
-                                    <div class="sub-heading sub-heading-banner">
-                                        <span class="sub-heading-title">Padel Club & Community</span>
+                    <div class="bcr-hero-wrapper">
+                        <div class="bcr-hero-left animate-box animate__animated animated" data-animate="animate__fadeInLeft">
+                            <!-- <div class="bcr-badge">
+                                <i class="fa-solid fa-flag-checkered"></i>
+                                <span>East Kalimantan's Biggest Run</span>
+                            </div> -->
+                            <h1 class="secondary-accent bcr-hero-title">Balikpapan<br>Coastal Running<br><span class="bcr-year">2026</span></h1>
+
+                            <!-- Countdown Timer -->
+                            <div class="bcr-countdown-wrapper">
+                                <div class="bcr-countdown-label">Race Day Countdown</div>
+                                <div class="bcr-countdown" id="bcr-countdown">
+                                    <div class="bcr-countdown-block">
+                                        <span class="bcr-countdown-num" id="cd-days">00</span>
+                                        <span class="bcr-countdown-unit">Days</span>
+                                    </div>
+                                    <span class="bcr-countdown-sep">:</span>
+                                    <div class="bcr-countdown-block">
+                                        <span class="bcr-countdown-num" id="cd-hours">00</span>
+                                        <span class="bcr-countdown-unit">Hours</span>
+                                    </div>
+                                    <span class="bcr-countdown-sep">:</span>
+                                    <div class="bcr-countdown-block">
+                                        <span class="bcr-countdown-num" id="cd-mins">00</span>
+                                        <span class="bcr-countdown-unit">Mins</span>
+                                    </div>
+                                    <span class="bcr-countdown-sep">:</span>
+                                    <div class="bcr-countdown-block">
+                                        <span class="bcr-countdown-num" id="cd-secs">00</span>
+                                        <span class="bcr-countdown-unit">Secs</span>
                                     </div>
                                 </div>
-                                <h1 class="secondary-accent">Join the Future of Padel</h1>
                             </div>
-    
-                            <div class="banner-home-network animate-box animate__animated animated" data-animate="animate__fadeInRight">
 
-                                <div class="banner-home-social">
-                                    <div class="social-container">
-                                        <i class="fa-brands fa-facebook"></i>
-                                        <a href="#" class="social-link-banner">Facebook</a>
-                                    </div>
-                                    <div class="social-container">
-                                        <i class="fa-brands fa-instagram"></i>
-                                        <a href="#" class="social-link-banner">Instagram</a>
-                                    </div>
-                                    <div class="social-container">
-                                        <i class="fa-brands fa-x-twitter"></i>
-                                        <a href="#" class="social-link-banner">X Twitter</a>
-                                    </div>
-                                    <div class="social-container">
-                                        <i class="fa-brands fa-tiktok"></i>
-                                        <a href="#" class="social-link-banner">Tiktok</a>
-                                    </div>
+                            <div class="bcr-stats-row">
+                                <div class="bcr-stat">
+                                    <span class="bcr-stat-num">5,000+</span>
+                                    <span class="bcr-stat-label">Runners</span>
                                 </div>
-
-                                <div class="card card-banner-reviewer">
-                                    <h4 class="secondary-accent">Unlock Your Full Potential</h4>
-                                    <div class="banner-reviewer-container">
-                                        <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Reviewer" class="banner-avatar">
-                                        <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Reviewer" class="banner-avatar">
-                                        <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Reviewer" class="banner-avatar">
-                                        <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Reviewer" class="banner-avatar">
-                                    </div>
-                                    <span class="reviewer-card-description">With expert Padel tips, gear recommendations, and pro level training.</span>
+                                <div class="bcr-stat-divider"></div>
+                                <div class="bcr-stat">
+                                    <span class="bcr-stat-num">4</span>
+                                    <span class="bcr-stat-label">Categories</span>
+                                </div>
+                                <div class="bcr-stat-divider"></div>
+                                <div class="bcr-stat">
+                                    <span class="bcr-stat-num">21K</span>
+                                    <span class="bcr-stat-label">Longest Route</span>
                                 </div>
                             </div>
                         </div>
-    
-                        <div class="banner-home-bottom">
-                            <div class="banner-home-community-container animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                                <div class="card banner-home-community">
-                                    <div class="home-community-img">
-                                        <img src="{{ asset('assets/images/dummy-img-600x500.jpg') }}" alt="Banner Home Community">
+                        <div class="bcr-hero-right animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInRight">
+                            <div class="bcr-event-card">
+                                <div class="bcr-event-card-header">
+                                    <span class="bcr-event-tag">Open Registration</span>
+                                </div>
+                                <h3 class="bcr-event-card-title">Secure Your Spot Early &amp; Get Exclusive Perks</h3>
+                                <p class="bcr-event-card-desc">Register now to get your exclusive race pack including running tee, finisher medal, and access to the post-run festival!</p>
+                                <div class="bcr-event-meta">
+                                    <div class="bcr-meta-item">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        <span>15 March 2026</span>
                                     </div>
-                                    <div class="home-community-content">
-                                        <div class="d-flex flex-row align-items-center gspace-1">
-                                            <h3 class="home-community-highlight">25+</h3>
-                                            <div class="banner-reviewer-container">
-                                                <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Reviewer" class="banner-avatar">
-                                                <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Reviewer" class="banner-avatar">
-                                                <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Reviewer" class="banner-avatar">
-                                                <img src="{{ asset('assets/images/Gp-1.png') }}" alt="Reviewer" class="banner-avatar banner-avatar-plus">
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column">
-                                            <h5 class="secondary-accent mb-0">Padel Enthusiasts. One Club</h5>
-                                            <p class="secondary-accent mb-0">Enjoy World-Class Facilities and a Thriving Community adipiscing elit ut elit.</p>
-                                        </div>
+                                    <div class="bcr-meta-item">
+                                        <i class="fa-solid fa-map-pin"></i>
+                                        <span>Pantai Balikpapan, Kalimantan Timur</span>
+                                    </div>
+                                    <div class="bcr-meta-item">
+                                        <i class="fa-solid fa-person-running"></i>
+                                        <span>5K &bull; 10K &bull; 21K &bull; Kids 1K</span>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="banner-home-cta-container animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInRight">
-                                <div class="banner-home-cta">
-                                    <h3 class="secondary-accent">Active Members and Unlock Premium Padel Facilities</h3>
-                                    <p class="secondary-accent">Experience professional training, top-notch facilities, and a vibrant community at Adelux your premier padel destination. Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit.</p>
-                                    <div class="d-flex flex-row align-items-center gspace-2 gspace-xl-4">
-                                        <div>
-                                            <a href="./booking.html" class="btn btn-accent">
-                                                <span class="btn-title">Book a Court</span>
-                                                <span class="icon-circle">
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <button class="request-loader" data-video="https://www.youtube.com/embed/VhBl3dHT5SY?autoplay=1">
-                                            <i class="fa-solid fa-play"></i>
-                                        </button>
-                                    </div>
-                                </div>
+                                <a href="#" class="btn btn-accent bcr-register-btn">
+                                    <span class="btn-title">Register Now</span>
+                                    <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -256,8 +238,8 @@
                             <div class="image-container about-img animate-box animate__animated animated" data-animate="animate__fadeInLeft">
                             <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="About Us Img">
                             <div class="card card-about-detail animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInUp">
-                                <h4>Adelux is a premier padel destination where passion, performance, and people come together.</h4>
-                                <a href="./about.html" class="link-wrapper">
+                                <h4>Balikpapan Coastal Run is a premier running destination where passion, performance, and people come together.</h4>
+                                <a href="#about" class="link-wrapper">
                                     <span>Learn More</span>
                                     <i class="fa-solid fa-chevron-circle-right"></i>
                                 </a>
@@ -273,33 +255,33 @@
                                     <span class="sub-heading-title">About Us</span>
                                 </div>
                             </div>
-                            <h2>More Than Just a Padel Club, It's a Community.</h2>
+                            <h2>More Than Just a Race, It's an Experience.</h2>
                         </div>
                         <div class="d-flex flex-column gspace-2">
                             <div class="about-description-container">
                                 <div class="animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                                    <p>At Adelux, we go beyond the game. Established with a vision to grow the padel sport, we offer world-class padel courts, certified coaches, and a welcoming community that supports every player's journey.</p>
-                                    <p>From personal training programs to tournaments and social events, Adelux is built for those who want to improve their skills, stay active, and be part of something bigger. Whether you're joining for fun, fitness, or professional growth — Adelux has something for everyone.</p>
+                                    <p>At Balikpapan Coastal Running, we go beyond the finish line. Established with a vision to celebrate health and community, we offer a breathtaking coastal route, certified pacers, and a welcoming environment that supports every runner's journey.</p>
+                                    <p>From fun runners to competitive marathoners, BCR is built for those who want to push their limits, stay active, and be part of something bigger. Whether you're running for fun, fitness, or professional growth — BCR has a distance for everyone.</p>
                                 </div>
 
                                 <div class="d-flex flex-column justify-content-center animate-box animate__animated animated" data-animate="animate__fadeInLeft">
                                     <div class="row row-cols-md-3 row-cols-1 grid-spacer-4">
                                         <div class="col">
                                             <div class="about-highlight-box">
-                                                <span class="counter counter-year about-highlight-text" data-target="2022"></span>
-                                                <h5>Padel Found In</h5>
+                                                <span class="counter counter-year about-highlight-text" data-target="2026"></span>
+                                                <h5>Established</h5>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="about-highlight-box">
-                                                <span class="counter about-highlight-text" data-target="100"></span>
-                                                <h5>Matches Host</h5>
+                                                <span class="counter about-highlight-text" data-target="5000"></span>
+                                                <h5>Runners</h5>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="about-highlight-box">
-                                                <span class="counter about-highlight-text" data-target="25"></span>
-                                                <h5>Active Members</h5>
+                                                <span class="counter about-highlight-text" data-target="3"></span>
+                                                <h5>Categories</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -322,11 +304,11 @@
                                 <div>
                                     <div class="sub-heading">
                                         <i class="fa-solid fa-circle accent-color-2"></i>
-                                        <span class="sub-heading-title">Why Choose Us</span>
+                                        <span class="sub-heading-title">Race Highlights</span>
                                     </div>
                                 </div>
-                                <h2>Why Padel Players Choose Adelux.</h2>
-                                <p class="mb-0">Discover what makes Adelux the top destination for padel enthusiasts of all levels.</p>
+                                <h2>Why Runners Choose BCR.</h2>
+                                <p class="mb-0">Discover what makes Balikpapan Coastal Running the top destination for runners of all levels.</p>
                             </div>
                             <div class="image-container whychoose-img animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInLeft">
                                 <img src="{{ asset('assets/images/dummy-img-600x400.jpg') }}" alt="Why Choose Us Image" class="chooseus-img">
@@ -351,10 +333,10 @@
                                 <div class="col">
                                     <div class="card card-chooseus animate-box animate__animated animated" data-animate="animate__fadeInRight">
                                         <div class="chooseus-icon">
-                                            <img src="{{ asset('assets/images/Icon-1.png') }}" alt="Banner Reviewer" class="img-fluid">
+                                            <img src="{{ asset('assets/images/Icon-1.png') }}" alt="Scenic Coastal Route" class="img-fluid">
                                         </div>
-                                        <h4>Professional-Grade Padel Courts</h4>
-                                        <a href="./service.html" class="chooseus-btn">
+                                        <h4>Scenic Coastal Route</h4>
+                                        <a href="#" class="chooseus-btn">
                                             <span class="icon-circle">
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </span>
@@ -364,10 +346,10 @@
                                 <div class="col">
                                     <div class="card card-chooseus bg-accent-color animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInRight">
                                         <div class="chooseus-icon">
-                                            <img src="{{ asset('assets/images/Icon-2.png') }}" alt="Banner Reviewer" class="img-fluid">
+                                            <img src="{{ asset('assets/images/Icon-2.png') }}" alt="Exclusive Medals" class="img-fluid">
                                         </div>
-                                        <h4 class="secondary-accent">Certified Coaches & Training</h4>
-                                        <a href="./coaching.html" class="chooseus-btn">
+                                        <h4 class="secondary-accent">Exclusive Finisher Medals</h4>
+                                        <a href="#" class="chooseus-btn">
                                             <span class="icon-circle">
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </span>
@@ -377,10 +359,10 @@
                                 <div class="col">
                                     <div class="card card-chooseus animate-box animate__animated animated" data-animate="animate__fadeInRight">
                                         <div class="chooseus-icon">
-                                            <img src="{{ asset('assets/images/Icon-3.png') }}" alt="Banner Reviewer" class="img-fluid">
+                                            <img src="{{ asset('assets/images/Icon-3.png') }}" alt="Hydration Points" class="img-fluid">
                                         </div>
-                                        <h4>Tournaments & Competitive Events</h4>
-                                        <a href="./event.html" class="chooseus-btn">
+                                        <h4>Well-Placed Hydration Stations</h4>
+                                        <a href="#" class="chooseus-btn">
                                             <span class="icon-circle">
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </span>
@@ -390,10 +372,10 @@
                                 <div class="col">
                                     <div class="card card-chooseus animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInRight">
                                         <div class="chooseus-icon">
-                                            <img src="{{ asset('assets/images/Icon-4.png') }}" alt="Banner Reviewer" class="img-fluid">
+                                            <img src="{{ asset('assets/images/Icon-4.png') }}" alt="Race Village" class="img-fluid">
                                         </div>
-                                        <h4>Modern Club Facilities</h4>
-                                        <a href="./community.html" class="chooseus-btn">
+                                        <h4>Festival & Race Village</h4>
+                                        <a href="#" class="chooseus-btn">
                                             <span class="icon-circle">
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </span>
@@ -418,17 +400,17 @@
                                     <div>
                                         <div class="sub-heading">
                                             <i class="fa-solid fa-circle accent-color-2"></i>
-                                            <span class="sub-heading-title">Our Service</span>
+                                            <span class="sub-heading-title">Race Categories</span>
                                         </div>
                                     </div>
-                                    <h2>Explore Our Padel Services</h2>
+                                    <h2>Pick Your Distance</h2>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="d-flex flex-column h-100 align-items-center align-items-md-end justify-content-center justify-content-md-end animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                                    <a href="./service.html" class="btn btn-accent">
+                                    <a href="#" class="btn btn-accent">
                                         <span class="btn-title">
-                                            View All Service
+                                            View Details
                                         </span>
                                         <span class="icon-circle">
                                             <i class="fa-solid fa-arrow-right"></i>
@@ -450,9 +432,9 @@
                                     <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="Service Image" class="service-img">
                                     <div class="service-detail-container">
                                         <div class="service-detail">
-                                            <h4 class="secondary-accent">Padel Court Rental</h4>
+                                            <h4 class="secondary-accent">5K Fun Run</h4>
                                             <div>
-                                                <a href="./service.html" class="service-btn">
+                                                <a href="#" class="service-btn">
                                                     <span class="icon-circle">
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </span>
@@ -468,15 +450,15 @@
                                 <div class="image-container">
                                     <div class="service-icon-container">
                                         <div class="service-icon">
-                                            <img src="{{ asset('assets/images/Icon-6.png') }}" alt="Service Image" class="img-fluid">
+                                            <img src="{{ asset('assets/images/Icon-6.png') }}" alt="10K Challenge" class="img-fluid">
                                         </div>
                                     </div>
-                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="Service Image" class="service-img">
+                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="10K Challenge" class="service-img">
                                     <div class="service-detail-container">
                                         <div class="service-detail">
-                                            <h4 class="secondary-accent">Padel Academy & Coaching</h4>
+                                            <h4 class="secondary-accent">10K Challenge</h4>
                                             <div>
-                                                <a href="./service.html" class="service-btn">
+                                                <a href="#" class="service-btn">
                                                     <span class="icon-circle">
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </span>
@@ -492,15 +474,15 @@
                                 <div class="image-container">
                                     <div class="service-icon-container">
                                         <div class="service-icon">
-                                            <img src="{{ asset('assets/images/Icon-7.png') }}" alt="Service Image" class="img-fluid">
+                                            <img src="{{ asset('assets/images/Icon-7.png') }}" alt="21K Half Marathon" class="img-fluid">
                                         </div>
                                     </div>
-                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="Service Image" class="service-img">
+                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="21K Half Marathon" class="service-img">
                                     <div class="service-detail-container">
                                         <div class="service-detail">
-                                            <h4 class="secondary-accent">Padel Tournaments</h4>
+                                            <h4 class="secondary-accent">21K Half Marathon</h4>
                                             <div>
-                                                <a href="./service.html" class="service-btn">
+                                                <a href="#" class="service-btn">
                                                     <span class="icon-circle">
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </span>
@@ -516,15 +498,15 @@
                                 <div class="image-container">
                                     <div class="service-icon-container">
                                         <div class="service-icon">
-                                            <img src="{{ asset('assets/images/Icon-8.png') }}" alt="Service Image" class="img-fluid">
+                                            <img src="{{ asset('assets/images/Icon-8.png') }}" alt="Kids Dash" class="img-fluid">
                                         </div>
                                     </div>
-                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="Service Image" class="service-img">
+                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="Kids Dash" class="service-img">
                                     <div class="service-detail-container">
                                         <div class="service-detail">
-                                            <h4 class="secondary-accent">Padel Club Membership</h4>
+                                            <h4 class="secondary-accent">Kids Dash 1K</h4>
                                             <div>
-                                                <a href="./service.html" class="service-btn">
+                                                <a href="#" class="service-btn">
                                                     <span class="icon-circle">
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </span>
@@ -540,90 +522,99 @@
             </div>
         </div>
 
-        <!-- Padel Booking Section -->
-        <div class="section pt-0">
+        <!-- Registration Pricing Section -->
+        <div class="section" id="info">
             <div class="hero-container">
-                <div class="booking-content-wrapper">
-                    <div class="booking-highlight-container">
-                        <div class="booking-tag-container animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                            <!-- You can change <span> to <a href="service.html"> if you want tags to be clickable -->
-                            <span class="booking-tag">Indoor & Outdoor</span>
-                            <span class="booking-tag">Real-Time Slot</span>
-                            <span class="booking-tag bg-accent-color secondary-accent">No Membership</span>
-                            <span class="booking-tag">Flexible Hours</span>
-                            <span class="booking-tag">Instant Access</span>
-                            <span class="booking-tag">Easy Booking</span>
-                            <span class="booking-tag">Night Play</span>
+                <div class="d-flex flex-column gspace-5">
+                    <div class="text-center animate-box animate__animated animated" data-animate="animate__fadeInUp">
+                        <div class="sub-heading justify-content-center">
+                            <i class="fa-solid fa-circle accent-color-2"></i>
+                            <span class="sub-heading-title">Registration</span>
                         </div>
-                        <div class="overflow-hidden">
-                            <div class="swiper swiperbooking animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInLeft">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="image-container">
-                                            <img src="{{ asset('assets/images/dummy-img-600x600.jpg') }}" alt="booking Image" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="image-container">
-                                            <img src="{{ asset('assets/images/dummy-img-600x600.jpg') }}" alt="booking Image" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="image-container">
-                                            <img src="{{ asset('assets/images/dummy-img-600x600.jpg') }}" alt="booking Image" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="image-container">
-                                            <img src="{{ asset('assets/images/dummy-img-600x600.jpg') }}" alt="booking Image" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="image-container">
-                                            <img src="{{ asset('assets/images/dummy-img-600x600.jpg') }}" alt="booking Image" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                           
+                        <h2>Choose Your Race Package</h2>
+                        <p style="max-width:560px; margin:0 auto;">Early bird slots are limited. Register now and save on your entry fee plus get exclusive race perks!</p>
                     </div>
-                    <div class="booking-content-container">
-                        <div class="d-flex flex-column justify-content-center justify-content-md-start text-center text-md-start gspace-2 animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                            <div>
-                                <div class="sub-heading">
-                                    <i class="fa-solid fa-circle accent-color-2"></i>
-                                    <span class="sub-heading-title">Booking Court</span>
-                                </div>
-                            </div>
-                            <h2>Book Your Padel Court Instantly.</h2>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row align-items-center gspace-5">
-                            <div class="card card-booking-cta  animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                                <div class="booking-cta-icon">
-                                    <i class="fa-solid fa-address-book"></i>
-                                </div>
-                                <h4 class="secondary-accent">Ready to Play? Reserve Your Padel Court Today</h4>
-                                <div>
-                                    <a href="./booking.html" class="btn btn-accent">
-                                        <span class="btn-title">
-                                            Book a Court
-                                        </span>
-                                        <span class="icon-circle">
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="booking-benefit-container animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInRight">
-                                <h3 class="text-center text-md-start">The Benefits</h3>
-                                <div class="underline-accent-5"></div>
-                                <ul class="check-list">
-                                    <li>Hourly court rental with real-time availability</li>
-                                    <li>Indoor & outdoor courts with pro-level surface</li>
-                                    <li>Lights for night play included</li>
-                                    <li>No membership required for booking</li>
-                                    <li>Mobile-friendly reservation system</li>
+                    <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 grid-spacer-2">
+                        <!-- 5K -->
+                        <div class="col">
+                            <div class="bcr-price-card animate-box animate__animated animated" data-animate="animate__fadeInUp">
+                                <div class="bcr-price-badge" style="background:var(--accent-color-9);">Fun Run</div>
+                                <div class="bcr-price-distance">5K</div>
+                                <div class="bcr-price-amount">Rp 150<span class="bcr-price-unit">K</span></div>
+                                <div class="bcr-price-phase">Early Bird</div>
+                                <ul class="bcr-price-features">
+                                    <li><i class="fa-solid fa-check"></i> Race Bib &amp; Chip Timing</li>
+                                    <li><i class="fa-solid fa-check"></i> Running Tee</li>
+                                    <li><i class="fa-solid fa-check"></i> Finisher Medal</li>
+                                    <li><i class="fa-solid fa-check"></i> Water &amp; Isotonic Station</li>
+                                    <li><i class="fa-solid fa-check"></i> Post-Race Festival Access</li>
                                 </ul>
+                                <a href="#" class="btn btn-accent" style="width:100%;justify-content:space-between;">
+                                    <span class="btn-title">Daftar Sekarang</span>
+                                    <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 10K -->
+                        <div class="col">
+                            <div class="bcr-price-card animate-box animate__animated animated" data-animate="animate__fadeInUp">
+                                <div class="bcr-price-badge" style="background:var(--accent-color-6);">Challenge</div>
+                                <div class="bcr-price-distance">10K</div>
+                                <div class="bcr-price-amount">Rp 200<span class="bcr-price-unit">K</span></div>
+                                <div class="bcr-price-phase">Early Bird</div>
+                                <ul class="bcr-price-features">
+                                    <li><i class="fa-solid fa-check"></i> Race Bib &amp; Chip Timing</li>
+                                    <li><i class="fa-solid fa-check"></i> Running Tee</li>
+                                    <li><i class="fa-solid fa-check"></i> Finisher Medal</li>
+                                    <li><i class="fa-solid fa-check"></i> Water &amp; Isotonic Station</li>
+                                    <li><i class="fa-solid fa-check"></i> Post-Race Festival Access</li>
+                                </ul>
+                                <a href="#" class="btn btn-accent" style="width:100%;justify-content:space-between;">
+                                    <span class="btn-title">Daftar Sekarang</span>
+                                    <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 21K -->
+                        <div class="col">
+                            <div class="bcr-price-card bcr-price-card--featured animate-box animate__animated animated" data-animate="animate__fadeInUp">
+                                <div class="bcr-price-featured-label">Most Popular</div>
+                                <div class="bcr-price-badge" style="background:var(--accent-color-2);">Half Marathon</div>
+                                <div class="bcr-price-distance">21K</div>
+                                <div class="bcr-price-amount">Rp 350<span class="bcr-price-unit">K</span></div>
+                                <div class="bcr-price-phase">Early Bird</div>
+                                <ul class="bcr-price-features">
+                                    <li><i class="fa-solid fa-check"></i> Race Bib &amp; Chip Timing</li>
+                                    <li><i class="fa-solid fa-check"></i> Premium Running Tee</li>
+                                    <li><i class="fa-solid fa-check"></i> Exclusive Finisher Medal</li>
+                                    <li><i class="fa-solid fa-check"></i> Water, Isotonic &amp; Gel Station</li>
+                                    <li><i class="fa-solid fa-check"></i> VIP Race Village Access</li>
+                                    <li><i class="fa-solid fa-check"></i> Official Certificate</li>
+                                </ul>
+                                <a href="#" class="btn btn-accent" style="width:100%;justify-content:space-between;">
+                                    <span class="btn-title">Daftar Sekarang</span>
+                                    <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Kids -->
+                        <div class="col">
+                            <div class="bcr-price-card animate-box animate__animated animated" data-animate="animate__fadeInUp">
+                                <div class="bcr-price-badge" style="background:var(--accent-color-7);color:var(--primary);">Kids Dash</div>
+                                <div class="bcr-price-distance">1K</div>
+                                <div class="bcr-price-amount">Rp 75<span class="bcr-price-unit">K</span></div>
+                                <div class="bcr-price-phase">Ages 5–12</div>
+                                <ul class="bcr-price-features">
+                                    <li><i class="fa-solid fa-check"></i> Race Bib</li>
+                                    <li><i class="fa-solid fa-check"></i> Kids Running Tee</li>
+                                    <li><i class="fa-solid fa-check"></i> Finisher Medal</li>
+                                    <li><i class="fa-solid fa-check"></i> Refreshments</li>
+                                    <li><i class="fa-solid fa-check"></i> Post-Race Festival Access</li>
+                                </ul>
+                                <a href="#" class="btn btn-accent" style="width:100%;justify-content:space-between;">
+                                    <span class="btn-title">Daftar Sekarang</span>
+                                    <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -631,234 +622,59 @@
             </div>
         </div>
 
-        <!-- Academy Section -->
-        <div class="section-wrapper py-0">
+        <!-- FAQ Section -->
+        <div class="section-wrapper py-0" id="faq">
             <div class="section section-academy">
                 <div class="hero-container">
-                    <div class="d-flex flex-column gspace-5">
-                        <div class="academy-title-container">
-                            <div class="academy-heading-container animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                                <div>
-                                    <div class="sub-heading">
-                                        <i class="fa-solid fa-circle accent-color-2"></i>
-                                        <span class="sub-heading-title">School & Academy</span>
-                                    </div>
-                                </div>
-                                <h2 class="secondary-accent">Build Your Skills with Our Padel Academy</h2>
-                            </div>
-                            <div class="academy-title-image animate-box animate__animated animated" data-animate="animate__fadeInUp">
-                                <div class="image-container overflow-visible">
-                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="Academy" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="academy-title-cta  animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                                <p class="secondary-accent">
-                                    From beginners to future pros — our structured training programs are designed for every age and skill level. Join certified coaches and elevate your game.
-                                </p>
-                                <div>
-                                    <a href="./service.html" class="btn btn-accent">
-                                        <span class="btn-title">
-                                            Explore our Programs
-                                        </span>
-                                        <span class="icon-circle">
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="academy-counter-container">
-                            <div class="row row-cols-xl-3 row-cols-1 grid-spacer-2">
-                                <div class="col">
-                                    <div class="d-flex flex-column gspace-1 animate-box animate__animated animated-delay-fast" data-animate="animate__fadeInRight">
-                                        <div class="d-flex flex-column flex-md-row gspace-1 gspace-md-2 align-items-center text-center text-md-start">
-                                            <span class="counter academy-stat" data-target="150"></span>
-                                            <h5 class="secondary-accent">Students Trained to Competitive Level</h5>
-                                        </div>
-                                        <p class="academy-stat-description">Our academy has successfully trained over 150 players who now compete in regional and national tournaments.</p>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex flex-column gspace-1  animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                                        <div class="d-flex flex-column flex-md-row gspace-1 gspace-md-2 align-items-center text-center text-md-start">
-                                            <span class="counter academy-stat" data-target="30"></span>
-                                            <h5 class="secondary-accent">National Certifications & Recognitions</h5>
-                                        </div>
-                                        <p class="academy-stat-description">Adelux Academy is officially recognized by 3 national-level padel and sports development organizations.</p>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex flex-column gspace-1  animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInRight">
-                                        <div class="d-flex flex-column flex-md-row gspace-1 gspace-md-2 align-items-center text-center text-md-start">
-                                            <span class="counter academy-stat" data-target="85"></span>
-                                            <h5 class="secondary-accent">Championship Won by Our Coaches</h5>
-                                        </div>
-                                        <p class="academy-stat-description">Our coaching team has collectively earned 12 prestigious padel championship titles a testament to their expertise</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="academy-video-section">
-                            <div class="academy-video-container">
-                                <div class="academy-video-wrapper">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/sh5uMmHmvos?autoplay=1&mute=1&loop=1&playlist=sh5uMmHmvos&controls=0&modestbranding=1&rel=0&showinfo=0"
-                                        title="Academy Introduction Video"
-                                        allow="autoplay; encrypted-media"
-                                        allowfullscreen
-                                    ></iframe>
-                                    <div class="video-overlay"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-cols-md-2 row-cols-1 grid-spacer-md-100 grid-spacer-2">
-                            <div class="col">
-                                <div class="d-flex flex-column gspace-2 animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                                    <ul class="circle-check-list">
-                                        <li>Beginner & Intermediate Classes</li>
-                                        <li>Kids & Teens Training Program</li>
-                                        <li>Private Coaching Sessions</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <ul class="circle-check-list">
-                                    <li>Group Technique Workshops</li>
-                                    <li>Fitness & Game Strategy</li>
-                                    <li>Certified Professional Coaches</li>
-                                </ul>
-                            </div>
-                        </div>                          
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tournament Section -->
-        <div class="section">
-            <div class="hero-container">
-                <div class="d-flex flex-column gspace-5">
-                    <div class="heading-section-container animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                        <div>
+                    <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5 align-items-start">
+                        <div class="col animate-box animate__animated animated" data-animate="animate__fadeInLeft">
                             <div class="sub-heading">
-                                <i class="fa-solid fa-circle accent-color-2"></i>
-                                <span class="sub-heading-title">Upcoming Tournament</span>
+                                <i class="fa-solid fa-circle" style="color:var(--accent-color-7);"></i>
+                                <span class="sub-heading-title secondary-accent">FAQ</span>
                             </div>
+                            <h2 class="secondary-accent">Frequently Asked Questions</h2>
+                            <p class="secondary-accent" style="opacity:0.8;">Have questions? We've got answers. If you don't find what you need, reach out to us directly.</p>
+                            <a href="#contact" class="btn btn-accent" style="width:fit-content;">
+                                <span class="btn-title">Contact Us</span>
+                                <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+                            </a>
                         </div>
-                        <h2>Join Our Exciting Upcoming Padel Events</h2>
-                    </div>
-
-                    <div class="tournament-grid">
-                        <div class="tournament-main-envent  animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                            <div class="card card-tournament main-event">
-                                <div class="tournament-tag-container">
-                                    <!-- You can change <span> to <a href="service.html"> if you want tags to be clickable -->
-                                    <span class="tournament-tag">Open For All</span>
-                                    <span class="tournament-tag">Competitive</span>
-                                    <span class="tournament-tag">Beginner Friendly</span>
-                                    <span class="tournament-tag">Monthly Series</span>
-                                    <span class="tournament-tag">Free Registration</span>
+                        <div class="col animate-box animate__animated animated" data-animate="animate__fadeInRight">
+                            <div class="bcr-faq-list">
+                                <div class="bcr-faq-item">
+                                    <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                        <span>Kapan pendaftaran ditutup?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="bcr-faq-answer">Pendaftaran Early Bird dibuka hingga 31 Januari 2026. Pendaftaran reguler akan ditutup pada 28 Februari 2026 atau saat kuota penuh.</div>
                                 </div>
-                                <div class="card-tournament-content">
-                                    <h4>Adelux Open 2025</h4>
-                                    <p class="secondary-accent">Lorem ipsum dolor sit amet adipiscing elit Ut elit tellus luctus nec ullam.</p>
-                                    <div class="d-flex flex-row justify-content-between align-items-end gspace-2">
-                                        <div class="d-flex flex-column gspace-1">
-                                            <div class="d-flex flex-row align-items-center gspace-1">
-                                                <i class="fa-solid fa-calendar accent-color-2"></i>
-                                                <span class="tournament-schedule">July 15-17, 2025</span>
-                                            </div>
-                                            <div class="d-flex flex-row align-items-center gspace-1">
-                                                <i class="fa-solid fa-list accent-color-2"></i>
-                                                <span class="tournament-schedule">Men's & Women's Singles</span>
-                                            </div>
-                                            <div class="d-flex flex-row align-items-center gspace-1">
-                                                <i class="fa-solid fa-list accent-color-2"></i>
-                                                <span class="tournament-schedule">$10.000</span>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <a href="community.html" class="tournament-btn">
-                                                <span class="icon-circle">
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="bcr-faq-item">
+                                    <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                        <span>Apakah ada batas usia minimum?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="bcr-faq-answer">Kategori 5K &amp; 10K terbuka untuk usia 15 tahun ke atas. Kategori 21K untuk usia 18 tahun ke atas. Kids Dash 1K untuk usia 5–12 tahun.</div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="tournament-event-list">
-                            <div class="card card-tournament tournament-cta animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                                <div class="tournament-cta-title">
-                                    <h3 class="secondary-accent">Ready to Serve Your Best Game?</h3>
-                                    <p class="secondary-accent">Register now or explore all upcoming events. Whether you're a beginner or a seasoned athlete, Adelux welcomes your competitive spirit.</p>
-                                    <div>
-                                        <a href="./booking.html" class="btn btn-accent">
-                                            <span class="btn-title">
-                                                Sing Up Now
-                                            </span>
-                                            <span class="icon-circle">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </span>
-                                        </a>
-                                    </div>
+                                <div class="bcr-faq-item">
+                                    <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                        <span>Di mana lokasi race pack pengambilan?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="bcr-faq-answer">Race pack dapat diambil di lokasi yang akan diumumkan H-2 sebelum hari perlombaan. Peserta wajib membawa bukti registrasi dan KTP.</div>
                                 </div>
-                                <div class="image-container">
-                                    <img src="{{ asset('assets/images/dummy-img-600x400.jpg') }}" alt="Tournament Image" class="tournament-cta-image">
+                                <div class="bcr-faq-item">
+                                    <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                        <span>Apakah pembayaran bisa melalui transfer bank?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="bcr-faq-answer">Ya, kami menerima berbagai metode pembayaran termasuk transfer bank, dompet digital (GoPay, OVO, Dana), dan kartu kredit/debit.</div>
                                 </div>
-                            </div>
-
-                            <div class="other-tournament-container">
-                                <div class="card card-tournament junior-padel-championship animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                                    <div class="tournament-tag-container">
-                                        <!-- You can change <span> to <a href="service.html"> if you want tags to be clickable -->
-                                        <span class="tournament-tag">Open for All</span>
-                                        <span class="tournament-tag">Competitive</span>
-                                        <span class="tournament-tag">Beginner Friendly</span>
-                                    </div>
-
-                                    <div class="card-tournament-content">
-                                        <div class="d-flex flex-row justify-content-between align-items-center gspace-2">
-                                            <h4>Junior Padel Community</h4>
-    
-                                            <div>
-                                                <a href="community.html" class="tournament-btn">
-                                                    <span class="icon-circle">
-                                                        <i class="fa-solid fa-arrow-right"></i>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card card-tournament comunity-padel-night animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInRight">
-                                    <div class="tournament-tag-container">
-                                        <!-- You can change <span> to <a href="service.html"> if you want tags to be clickable -->
-                                        <span class="tournament-tag">Open for All</span>
-                                        <span class="tournament-tag">Competitive</span>
-                                        <span class="tournament-tag">Beginner Friendly</span>
-                                    </div>
-
-                                    <div class="highlight-image">
-                                        <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="card-tournament-content">
-                                        <div class="d-flex flex-row justify-content-between align-items-center gspace-2">
-                                            <h4>Community Padel Night</h4>
-    
-                                            <div>
-                                                <a href="community.html" class="tournament-btn">
-                                                    <span class="icon-circle">
-                                                        <i class="fa-solid fa-arrow-right"></i>
-                                                    </span>
-                                                </a>
-                                            </div>
-
-                                        </div>
-                                    </div>
+                                <div class="bcr-faq-item">
+                                    <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                        <span>Bagaimana jika saya tidak bisa hadir setelah mendaftar?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="bcr-faq-answer">Biaya pendaftaran tidak dapat dikembalikan. Namun, Anda dapat melakukan transfer bib kepada peserta lain dengan menghubungi panitia minimal 7 hari sebelum acara.</div>
                                 </div>
                             </div>
                         </div>
@@ -867,338 +683,6 @@
             </div>
         </div>
 
-        <!-- Community Section -->
-        <div class="section-wrapper py-0">
-            <div class="section section-community">
-                <div class="hero-container">
-                    <div class="community-grid">
-                        <div class="image-container animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                            <div class="community-cta animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInDown">
-                                <h4 class="accent-color">Be Part of Something Bigger Than the Game</h4>
-                                <div class="d-flex flex-row align-items-center gspace-1">
-                                    <a href="./contact.html" class="primary-accent">Join The Community</a>
-                                    <i class="fa-solid fa-circle-chevron-right"></i>
-                                </div>
-                            </div>
-                            <img src="{{ asset('assets/images/dummy-img-600x600.jpg') }}" alt="Community image" class="community-images">
-                        </div>
-                        <div class="d-flex flex-column gspace-5">
-                            <div class="d-flex flex-column gspace-2 animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                                <div>
-                                    <div class="sub-heading">
-                                        <i class="fa-solid fa-circle accent-color-2"></i>
-                                        <span class="sub-heading-title">Adelux Padel Community</span>
-                                    </div>
-                                </div>
-                                <h2>Grow With a Passionate Padel Community</h2>
-                            </div>
-                            <div class="d-flex flex-column gspace-2 w-100">
-                                <div class="d-flex flex-column flex-md-row gspace-2 gspace-md-5 justify-content-start justify-content-xl-between align-items-center align-items-md-start text-center text-md-start animate-box animate__animated animated-delay-fast" data-animate="animate__fadeInRight">
-                                    <div>
-                                        <div class="community-icon">
-                                            <img src="{{ asset('assets/images/Icon-11.png') }}" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <h4>Weekly Meetups</h4>
-                                        <p>Casual games and friendly matches every weekend to build lasting bonds on the court.</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column flex-md-row gspace-2 gspace-md-5 justify-content-start justify-content-xl-between align-items-center align-items-md-start text-center text-md-start animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                                    <div>
-                                        <div class="community-icon">
-                                            <img src="{{ asset('assets/images/Icon-9.png') }}" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <h4>Skill-Level Based Groups</h4>
-                                        <p>Connect with players at your level — beginner, intermediate, or advanced.</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column flex-md-row gspace-2 gspace-md-5 justify-content-start justify-content-xl-between align-items-center align-items-md-start text-center text-md-start animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInRight">
-                                    <div>
-                                        <div class="community-icon">
-                                            <img src="{{ asset('assets/images/Icon-10.png') }}" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <h4>Member Only Events</h4>
-                                        <p>Exclusive workshops, networking nights, and closed tournaments for members.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Testimonial Section -->
-        <div class="section testimonial-banner">
-            <div class="hero-container">
-                <div class="d-flex flex-column gspace-5">
-                    <div class="heading-section-container animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                        <div>
-                            <div class="sub-heading">
-                                <i class="fa-solid fa-circle accent-color-2"></i>
-                                <span class="sub-heading-title">Testimonials</span>
-                            </div>
-                        </div>
-                        <h2>What Our Members Say</h2>
-                    </div>
-
-                    <div class="testimonial-content-container animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                        <div class="testimonial-side testimonial-side--left">   
-                            <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar Side" class="testimonial-avatar testimonial-avatar--lg align-self-end">
-                            <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar Side" class="testimonial-avatar testimonial-avatar--sm align-self-center">
-                            <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar Side" class="testimonial-avatar testimonial-avatar--md align-self-end">
-                        </div>
-                        <div class="card card-testimonial">
-                            <div class="testimonial-btn-container">
-                                <button class="testimonial-btn" id="prev" type="button">
-                                    <i class="fa-solid fa-circle-arrow-left"></i>
-                                  </button>
-                                  <button class="testimonial-btn" id="next" type="button">
-                                    <i class="fa-solid fa-circle-arrow-right"></i>
-                                  </button>
-                            </div>
-                            <div class="testimonial-slider">
-                                <div class="testimonial-slider-wrapper" id="testimonial-slider">
-                                    <div class="testimonial-slide" data-index="0">
-                                        <p class="testimonial-quote">
-                                            "This is by far the best padel club I've ever joined. Great atmosphere, well-maintained courts, and a real sense of community. Highly recommended!"
-                                        </p>
-                                        <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar" class="testimonial-avatar">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <span class="testimonial-name">James Miller</span>
-                                            <span class="testimonial-designation">Fitness Enthusiasts</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="testimonial-slide" data-index="1">
-                                        <p class="testimonial-quote">
-                                            "From the first visit, I felt welcomed. Booking a court is easy, and the coaching programs are top-notch. It's a great place to improve."
-                                        </p>
-                                        <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar" class="testimonial-avatar">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <span class="testimonial-name">Elena Gomez</span>
-                                            <span class="testimonial-designation">Business Consultant</span>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-slide" data-index="2">
-                                        <p class="testimonial-quote">
-                                            "From the first visit, I felt welcomed. Booking a court is easy, and the coaching programs are top-notch. It's a great place to improve."
-                                        </p>
-                                        <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar" class="testimonial-avatar">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <span class="testimonial-name">Daniel Carter</span>
-                                            <span class="testimonial-designation">University Student</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="testimonial-slide" data-index="3">
-                                        <p class="testimonial-quote">
-                                            "A fantastic place to train, play, and socialize. The academy helped boost my skills, and the community is both diverse and inspiring."
-                                        </p>
-                                        <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar" class="testimonial-avatar">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <span class="testimonial-name">Sophia Bennet</span>
-                                            <span class="testimonial-designation">Marketing Executive</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="testimonial-slide" data-index="4">
-                                        <p class="testimonial-quote">
-                                            "What I love most is the flexibility and the quality of the courts. Whether you're a beginner or a pro, there's something here for everyone."
-                                        </p>
-                                        <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar" class="testimonial-avatar">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <span class="testimonial-name">Mark Tunner</span>
-                                            <span class="testimonial-designation">Software Developer</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="testimonial-slide" data-index="5">
-                                        <p class="testimonial-quote">
-                                            "This club takes padel seriously—and makes it fun too! I've attended several tournaments and always walk away with great experiences."
-                                        </p>
-                                        <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar" class="testimonial-avatar">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <span class="testimonial-name">Isabella Collins</span>
-                                            <span class="testimonial-designation">Creative Director</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial-nav-container">
-                                <button class="testimonial-nav-btn active"></button>
-                                <button class="testimonial-nav-btn"></button>
-                                <button class="testimonial-nav-btn"></button>
-                                <button class="testimonial-nav-btn"></button>
-                                <button class="testimonial-nav-btn"></button>
-                                <button class="testimonial-nav-btn"></button>
-                            </div>
-                        </div>
-                        <div class="testimonial-side testimonial-side--right">   
-                            <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar Side" class="testimonial-avatar testimonial-avatar--md align-self-start">
-                            <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar Side" class="testimonial-avatar testimonial-avatar--lg align-self-center">
-                            <img src="{{ asset('assets/images/dummy-img-400x400.jpg') }}" alt="Testimonial Avatar Side" class="testimonial-avatar testimonial-avatar--sm align-self-start">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Membership CTA Section -->
-        <div class="section py-0">
-            <div class="hero-container">
-                <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
-                    <div class="col col-xl-5">
-                        <div class="card card-membership-cta cta-content animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                            <h3>Become an Adelux Member Today</h3>
-                            <ul class="check-list alternative-list">
-                                <li>Priority Court Booking</li>
-                                <li>Free Access to Weekly Meetups</li>
-                                <li>Member-Only Tournament Slots</li>
-                                <li>Discounted Coaching Sessions</li>
-                            </ul>
-                            <div class="align-self-center align-self-md-start">
-                                <a href="./contact.html" class="btn btn-accent bg-accent-color-6">
-                                    <span class="btn-title">
-                                        Sign Up Now
-                                    </span>
-                                    <span class="icon-circle">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-xl-7">
-                        <div class="card card-membership-cta cta-benefit animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                            <p class="membership-cta-description">Unlock exclusive benefits, member-only events, discounted court bookings, and priority access to tournaments. Whether you're a casual player or a future champion.</p>
-                            <div class="position-relative overflow-hidden">
-                                <div class="cta-tag-container">
-                                    <!-- You can change <span> to <a href="service.html"> if you want tags to be clickable -->
-                                    <span class="cta-tag">Player Feedback</span>
-                                    <span class="cta-tag">Reel Stories</span>
-                                    <span class="cta-tag">Member Voices</span>
-                                </div>
-                                <img src="{{ asset('assets/images/dummy-img-600x400.jpg') }}" alt="Call to Action" class="cta-benefit-img">
-                                <div class="cta-benefit-title">
-                                    <h4 class="secondary-accent">25+ Active Members | 7-Day Access | All Skill Levels Welcome</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Blog Section -->
-        <div class="section">
-            <div class="hero-container">
-                <div class="d-flex flex-column gspace-5">
-                    <div class="blog-title-container">
-                        <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
-                            <div class="col">
-                                <div class="d-flex flex-column gspace-2 justify-content-center justify-content-md-start text-center text-md-start animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                                    <div>
-                                        <div class="sub-heading">
-                                            <i class="fa-solid fa-circle accent-color-2"></i>
-                                            <span class="sub-heading-title">Blog & Tips</span>
-                                        </div>
-                                    </div>
-                                    <h2>Latest Blog & Padel Tips</h2>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex flex-column h-100 align-items-center justify-content-center align-items-md-end justify-content-md-end animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                                    <a href="./blog.html" class="btn btn-accent">
-                                        <span class="btn-title">
-                                            <span>Read More</span>
-                                        </span>
-                                        <span class="icon-circle">
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 grid-spacer-2">
-                        <div class="col">
-                            <div class="card card-blog animate-box animate__animated animated" data-animate="animate__fadeInUp">
-                                <a href="/single-post.html">     
-                                <div class="image-container blog-image">
-                                        <img src="{{ asset('assets/images/dummy-img-600x600.jpg') }}" alt="Blog Image">
-                                        <div class="blog-content">
-                                            <div class="d-flex flex-row align-items-center justify-content-start gspace-2">
-                                                <div class="meta-data">
-                                                    <i class="fa-solid fa-calendar"></i>
-                                                    <span>16 Jun 2025</span>
-                                                </div>
-                                                <div class="meta-data">
-                                                    <i class="fa-solid fa-folder"></i>
-                                                    <span>Padel Lifestyle</span>
-                                                </div>
-                                            </div>
-                                            <h4 class="secondary-accent">Why Joining a Padel Community Matters</h4>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-blog animate-box animate__animated animated" data-animate="animate__fadeInUp">
-                                <a href="/single-post.html">     
-                                    <div class="image-container blog-image">
-                                        <img src="{{ asset('assets/images/dummy-img-600x600.jpg') }}" alt="Blog Image">
-                                        <div class="blog-content">
-                                            <div class="d-flex flex-row align-items-center justify-content-start gspace-2">
-                                                <div class="meta-data">
-                                                    <i class="fa-solid fa-calendar"></i>
-                                                    <span>16 Jun 2025</span>
-                                                </div>
-                                                <div class="meta-data">
-                                                    <i class="fa-solid fa-folder"></i>
-                                                    <span>Events & News</span>
-                                                </div>
-                                            </div>
-                                            <h4 class="secondary-accent">Booking Courts Online: Quick & Easy Guide</h4>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-blog animate-box animate__animated animated" data-animate="animate__fadeInUp">
-                                <a href="./single-post.html">     
-                                    <div class="image-container blog-image">
-                                        <img src="{{ asset('assets/images/dummy-img-600x600.jpg') }}" alt="Blog Image">
-                                        <div class="blog-content">
-                                            <div class="d-flex flex-row align-items-center justify-content-start gspace-2">
-                                                <div class="meta-data">
-                                                    <i class="fa-solid fa-calendar"></i>
-                                                    <span>16 Jun 2025</span>
-                                                </div>
-                                                <div class="meta-data">
-                                                    <i class="fa-solid fa-folder"></i>
-                                                    <span>Events & News</span>
-                                                </div>
-                                            </div>
-                                            <h4 class="secondary-accent">Recap: Adelux Spring Tournament 2025</h4>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
     <!-- Footer Section -->
     <footer>
         <div class="section pb-0 bg-accent-color">
@@ -1208,10 +692,10 @@
                         <div class="col">
                             <div class="d-flex flex-column gspace-2">
                                 <div class="footer-logo-container">
-                                    <img src="{{ asset('assets/images/Adelux-Logo.png') }}" alt="Logo" class="img-fluid">
+                                    <img src="{{ asset('assets/images/running/BCR Logo-01.png') }}" alt="Logo" class="img-fluid" style="height: 60px;">
                                 </div>
-                                <h4 class="secondary-accent">Adelux Padel Club & Academy</h4>
-                                <p class="secondary-accent">Experience the future of padel through modern courts, expert coaching, and an inclusive community.</p>
+                                <h4 class="secondary-accent">Balikpapan Coastal Running</h4>
+                                <p class="secondary-accent">Experience the biggest coastal running event in East Kalimantan. Join thousands of runners and conquer the coastal track.</p>
                                 <div class="footer-social-icon">
                                     <a href="#" class="social-icon">
                                         <i class="fa-brands fa-facebook"></i>
@@ -1236,13 +720,13 @@
                                 <h4 class="secondary-accent">Quick Links</h4>
                                 <div class="underline-primary-accent"></div>
                                 <ul class="chevron-list">
-                                    <li><a href="./index.html">Home</a></li>
-                                    <li><a href="./about.html">About Us</a></li>
-                                    <li><a href="./community.html">School & Academy</a></li>
-                                    <li><a href="./booking.html">Book a Court</a></li>
-                                    <li><a href="./event.html">Tournament </a></li>
-                                    <li><a href="./blog.html">Our Blog </a></li>
-                                    <li><a href="./contact.html">Contact Us </a></li>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About Event</a></li>
+                                    <li><a href="#categories">Categories</a></li>
+                                    <li><a href="#info">Race Info</a></li>
+                                    <li><a href="#rules">Race Rules</a></li>
+                                    <li><a href="#faq">FAQ</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1270,7 +754,7 @@
                                         </div>
                                         <div class="d-flex flex-column">
                                             <h6 class="contact-info-heading">Email Address</h6>
-                                            <h5 class="secondary-accent">hello@adeluxpadel.com</h5>
+                                            <h5 class="secondary-accent">hello@balikpapanrunning.com</h5>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row gspace-1 align-items-start">
@@ -1281,7 +765,7 @@
                                         </div>
                                         <div class="d-flex flex-column">
                                             <h6 class="contact-info-heading">Location</h6>
-                                            <h5 class="secondary-accent">Adelux Padel Center, 123 Avenue Court, New York, NY</h5>
+                                            <h5 class="secondary-accent">Balikpapan, East Kalimantan, Indonesia</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1291,7 +775,7 @@
                             <div class="d-flex flex-column gspace-2">
                                 <h4 class="secondary-accent">Subscribe Newsletter</h4>
                                 <div class="underline-primary-accent"></div>
-                                <p class="secondary-accent">Get the latest updates on tournaments, promotions & padel tips.</p>
+                                <p class="secondary-accent">Get the latest updates on race info, promotions & running tips.</p>
                                 <div id="newsletter-success" class="alert success hidden">
                                     <span class="check-icon"><i class="fa-solid fa-2xl fa-check"></i></span>
                                     <p class="text-center">Thank you! Form submitted successfully.</p>
@@ -1320,7 +804,7 @@
                             <a href="#" class="legalink">Terms & Conditions</a>
                         </div>
 
-                        <h6 class="secondary-accent mb-0">© 2025 Adelux Padel Club. All rights reserved.</h6>
+                        <h6 class="secondary-accent mb-0">© 2026 Balikpapan Coastal Running. All rights reserved.</h6>
                     </div>
                 </div>
             </div>
@@ -1337,5 +821,27 @@
     <script src="{{ asset('assets/js/submit-form.js') }}"></script>
     <script src="{{ asset('assets/js/swiper-script.js') }}"></script>
     <script src="{{ asset('assets/js/video_embedded.js') }}"></script>
+    <script>
+        // BCR Countdown Timer — Race Day: 15 March 2026
+        (function(){
+            var target = new Date('2026-03-15T06:00:00+08:00').getTime();
+            function pad(n){ return String(n).padStart(2,'0'); }
+            function tick(){
+                var now = Date.now();
+                var diff = target - now;
+                if(diff < 0){ diff = 0; }
+                var d = Math.floor(diff / 86400000);
+                var h = Math.floor((diff % 86400000) / 3600000);
+                var m = Math.floor((diff % 3600000) / 60000);
+                var s = Math.floor((diff % 60000) / 1000);
+                document.getElementById('cd-days').textContent  = pad(d);
+                document.getElementById('cd-hours').textContent = pad(h);
+                document.getElementById('cd-mins').textContent  = pad(m);
+                document.getElementById('cd-secs').textContent  = pad(s);
+            }
+            tick();
+            setInterval(tick, 1000);
+        })();
+    </script>
 </body>
 </html>

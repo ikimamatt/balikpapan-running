@@ -10,7 +10,20 @@ $(document).ready(function() {
     initSubmitBooking(); 
     initSubmitForm();
     initSubmitNewsletter();
+    initStickyNavbar();
 });
+
+function initStickyNavbar() {
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 100) {
+            $('.navbar-container').addClass('is-sticky');
+            $('.navbar').addClass('is-scrolled');
+        } else {
+            $('.navbar-container').removeClass('is-sticky');
+            $('.navbar').removeClass('is-scrolled');
+        }
+    });
+}
 
 function initCustomDropdown() {
     $('.dropdown-select').on('click', function(e) {
