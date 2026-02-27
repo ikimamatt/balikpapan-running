@@ -51,6 +51,7 @@ Version: 1.0.0
 /* 43. Footer Styles */
 
 /* 01. Import Vendor */
+@import url('../css/custom-fonts.css');
 @import url('../webfonts/font-family-montserrat.css');
 @import url('../webfonts/font-family-lato.css');
 @import url('../css/vendor/bootstrap.min.css');
@@ -81,8 +82,8 @@ Version: 1.0.0
     --accent-transparent-white-2: #FFFFFF14;
     --accent-transparent-black: #0000005C;
     --accent-transparent-black-2: #00000087;
-    --font-family-1: "Montserrat", sans-serif;
-    --font-family-2: "Lato", sans-serif;
+    --font-family-1: "Zuume", "Monling", sans-serif;
+    --font-family-2: "Inter Tight", sans-serif;
     --animation-normal: 1.25s;
     --animation-slow: 2.25s;
     --animation-fast: 0.75s;
@@ -143,6 +144,13 @@ h2 {
     font-size: 64px;
     font-weight: 700;
     line-height: 1.2em;
+}
+
+.bcr-hero-title {
+    letter-spacing: 3px !important;
+    font-variant-ligatures: none;
+    font-kerning: none;
+    font-feature-settings: "liga" 0, "clig" 0, "dlig" 0, "kern" 0;
 }
 
 h3 {
@@ -1424,6 +1432,12 @@ ul {
     width: 100%;
 }
 
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+}
+
 .banner-avatar {
     display: inline-block;
     vertical-align: middle;
@@ -1888,20 +1902,25 @@ ul {
 }
 
 .navbar .nav-link-container {
-    width: 64%;
+    width: auto;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    margin-right: 20px;
 }
 
 .nav-link {
-    font-family: var(--font-family-1);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1em;
     color: var(--secondary);
-    padding: 0px 15px 0px 15px;
+    transition: all 400ms;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    z-index: 1;
+    font-size: 1.35rem;
+    /* Increased from 1.15rem */
+    font-weight: 700;
+    /* Made slightly thicker to help legibility at a larger size */
 }
 
 .nav-link:hover,

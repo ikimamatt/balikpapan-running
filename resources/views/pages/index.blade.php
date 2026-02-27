@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adelux</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}?v={{ time() }}">
     <link rel="web icon" href="{{ asset('assets/images/favicon.ico') }}">
 </head>
 <body>
@@ -25,40 +25,26 @@
                     </div>
                 
                     <!-- Nav Link Container -->
-                    <div class="nav-link-container">
+                    <div class="nav-link-container ms-auto">
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav mx-auto">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-size: 100px; font-weight: 700;">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#about">About Event</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Categories <i class="fa-solid fa-chevron-down"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">5K Fun Run</a></li>
-                                        <li><a class="dropdown-item" href="#">10K Challenge</a></li>
-                                        <li><a class="dropdown-item" href="#">21K Half Marathon</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Race Info <i class="fa-solid fa-chevron-down"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Route Map</a></li>
-                                        <li><a class="dropdown-item" href="#">Rules & Regulations</a></li>
-                                        <li><a class="dropdown-item" href="#">Race Pack Collection</a></li>
-                                        <li><a class="dropdown-item" href="#">FAQ</a></li>
-                                    </ul>
+                                    <a class="nav-link" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#why-choose-us">Why Choose Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#service">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pricing">Registration Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#faq">FAQ</a>
                                 </li>
                             </ul>
                         </div>
@@ -99,32 +85,12 @@
                     <button class="close-btn"><span>X</span></button>
                 </div>
                 <ul class="menu">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#about">About Event</a></li>
-                    <li class="sidebar-dropdown">
-                        <div class="dropdown-header">
-                            <a href="#">Categories</a>
-                            <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
-                        </div>
-                        <ul class="sidebar-dropdown-menu">
-                            <li><a href="#">5K Fun Run</a></li>
-                            <li><a href="#">10K Challenge</a></li>
-                            <li><a href="#">21K Half Marathon</a></li>
-                        </ul>
-                    </li>         
-                    <li class="sidebar-dropdown">
-                        <div class="dropdown-header">
-                            <a href="#">Race Info</a>
-                            <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
-                        </div>
-                        <ul class="sidebar-dropdown-menu">
-                            <li><a href="#">Route Map</a></li>
-                            <li><a href="#">Rules & Regulations</a></li>
-                            <li><a href="#">Race Pack Collection</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </li>   
-                    <li class="below-dropdown"><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#why-choose-us">Why Choose Us</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#pricing">Registration Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
             </div>
         </div>
@@ -133,7 +99,7 @@
     <!-- Main Section -->
     <main>
         <!-- Banner Home Section -->
-        <div class="pb-0" style="padding-top: 0;">
+        <div class="pb-0" id="home" style="padding-top: 0;">
             <div class="banner-home-container" style="border-radius: 0; background-image: url('{{ asset('assets/images/running/jumbotron.jpg') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
                 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.72); z-index: -1;"></div>
                 <div class="hero-container">
@@ -231,7 +197,7 @@
         </div>
         
         <!-- About Section -->
-        <div class="section">
+        <div class="section" id="about">
             <div class="hero-container">
                 <div class="about-wrapper">
                     <div class="about-image-container">
@@ -294,7 +260,7 @@
         </div>
 
         <!-- Why Choose Us Section -->
-        <div class="section-wrapper py-0">
+        <div class="section-wrapper py-0" id="why-choose-us">
             <div class="section section-chooseus">
                 <div class="hero-container">
                     <div class="d-flex flex-column flex-xl-row align-items-center gspace-100">
@@ -390,7 +356,7 @@
         </div>
         
         <!-- Service Section -->
-        <div class="section">
+        <div class="section" id="service">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-5">
                     <div class="service-title-container">
@@ -523,7 +489,7 @@
         </div>
 
         <!-- Registration Pricing Section -->
-        <div class="section" id="info">
+        <div class="section" id="pricing">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-5">
                     <div class="text-center animate-box animate__animated animated" data-animate="animate__fadeInUp">
