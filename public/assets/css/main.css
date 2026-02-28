@@ -3986,6 +3986,220 @@ ul {
     flex-shrink: 0;
 }
 
+/* ===== BCR Countdown Timer ===== */
+.bcr-countdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bcr-countdown-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: var(--font-family-2);
+}
+
+.bcr-countdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.bcr-countdown-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.bcr-countdown-num {
+    font-family: var(--font-family-1);
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--accent-color-7);
+    line-height: 1;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    min-width: 72px;
+    text-align: center;
+    padding: 12px 10px;
+    backdrop-filter: blur(4px);
+}
+
+.bcr-countdown-unit {
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: var(--font-family-2);
+}
+
+.bcr-countdown-sep {
+    font-family: var(--font-family-1);
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--accent-color-7);
+    line-height: 1;
+    padding-bottom: 18px;
+    align-self: flex-end;
+}
+
+/* ===== BCR Official Tagline ===== */
+.bcr-tagline-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bcr-tagline-wrapper::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--accent-color-7);
+    flex-shrink: 0;
+    border-radius: 2px;
+}
+
+.bcr-tagline {
+    font-family: var(--font-family-1);
+    font-size: clamp(18px, 2.5vw, 28px);
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-color-7);
+    line-height: 1;
+    background: linear-gradient(90deg, var(--accent-color-7) 0%, var(--accent-color-6) 60%, var(--accent-color-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== BCR Race Merch Section ===== */
+.bcr-merch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.bcr-merch-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bcr-merch-img-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bcr-merch-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 500ms ease;
+}
+
+.bcr-merch-img-wrap:hover .bcr-merch-img {
+    transform: scale(1.05);
+}
+
+.bcr-merch-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(1, 14, 30, 0.75) 0%, transparent 55%);
+    pointer-events: none;
+}
+
+.bcr-merch-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: var(--font-family-1);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 100px;
+}
+
+.bcr-merch-tag i {
+    color: var(--accent-color-7);
+    font-size: 13px;
+}
+
+.bcr-merch-label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 4px;
+}
+
+.bcr-merch-label h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .bcr-merch-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .bcr-merch-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== BCR FAQ Section ===== */
+.bcr-faq-section {
+    background-color: var(--accent-color-8);
+}
+
+.bcr-faq-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.bcr-faq-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1 1 400px;
+}
+
+.bcr-faq-header-right {
+    flex-shrink: 0;
+}
+
 /* ===== BCR FAQ Accordion ===== */
 .bcr-faq-list {
     display: flex;

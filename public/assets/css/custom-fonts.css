@@ -4,6 +4,7 @@
     font-weight: 100 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Inter Tight';
     src: url('../font/Inter_Tight/InterTight-Italic-VariableFont_wght.ttf') format('truetype');
@@ -17,33 +18,45 @@
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Zuume';
     src: url('../font/zuume/Zuume Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Zuume';
     src: url('../font/zuume/Zuume SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Zuume';
     src: url('../font/zuume/Zuume Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Zuume';
     src: url('../font/zuume/Zuume ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Zuume';
     src: url('../font/zuume/Zuume Black.ttf') format('truetype');
     font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monling';
+    src: url('../font/monling/Monling-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
