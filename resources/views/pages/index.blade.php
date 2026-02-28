@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -111,6 +111,11 @@
                             </div> -->
                             <h1 class="secondary-accent bcr-hero-title">Balikpapan<br>Coastal Running<br><span class="bcr-year">2026</span></h1>
 
+                            <!-- Official Tagline -->
+                            <div class="bcr-tagline-wrapper">
+                                <span class="bcr-tagline">CARRY THE MILES</span>
+                            </div>
+
                             <!-- Countdown Timer -->
                             <div class="bcr-countdown-wrapper">
                                 <div class="bcr-countdown-label">Race Day Countdown</div>
@@ -144,12 +149,12 @@
                                 </div>
                                 <div class="bcr-stat-divider"></div>
                                 <div class="bcr-stat">
-                                    <span class="bcr-stat-num">4</span>
+                                    <span class="bcr-stat-num">2</span>
                                     <span class="bcr-stat-label">Categories</span>
                                 </div>
                                 <div class="bcr-stat-divider"></div>
                                 <div class="bcr-stat">
-                                    <span class="bcr-stat-num">21K</span>
+                                    <span class="bcr-stat-num">12.9K</span>
                                     <span class="bcr-stat-label">Longest Route</span>
                                 </div>
                             </div>
@@ -172,7 +177,7 @@
                                     </div>
                                     <div class="bcr-meta-item">
                                         <i class="fa-solid fa-person-running"></i>
-                                        <span>5K &bull; 10K &bull; 21K &bull; Kids 1K</span>
+                                        <span>5K &bull; 12.9K</span>
                                     </div>
                                 </div>
                                 <a href="#" class="btn btn-accent bcr-register-btn">
@@ -202,14 +207,14 @@
                 <div class="about-wrapper">
                     <div class="about-image-container">
                             <div class="image-container about-img animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                            <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="About Us Img">
-                            <div class="card card-about-detail animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInUp">
+                            <img src="{{ asset('assets/images/running/carry.png') }}" alt="About Us Img">
+                            <!-- <div class="card card-about-detail animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInUp">
                                 <h4>Balikpapan Coastal Run is a premier running destination where passion, performance, and people come together.</h4>
                                 <a href="#about" class="link-wrapper">
                                     <span>Learn More</span>
                                     <i class="fa-solid fa-chevron-circle-right"></i>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -226,8 +231,8 @@
                         <div class="d-flex flex-column gspace-2">
                             <div class="about-description-container">
                                 <div class="animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                                    <p>At Balikpapan Coastal Running, we go beyond the finish line. Established with a vision to celebrate health and community, we offer a breathtaking coastal route, certified pacers, and a welcoming environment that supports every runner's journey.</p>
-                                    <p>From fun runners to competitive marathoners, BCR is built for those who want to push their limits, stay active, and be part of something bigger. Whether you're running for fun, fitness, or professional growth — BCR has a distance for everyone.</p>
+                                    <p>Balikpapan Coastal Running 2026 dirancang sebagai event lari tahunan yang merepresentasikan semangat hidup sehat, kebersamaan komunitas, serta karakter khas kota Balikpapan sebagai kota pesisir. Logo ini mengambil inspirasi dari elemen <em>coastal</em> seperti laut, ombak, dan matahari yang diwujudkan melalui bentuk dinamis menyerupai gerak pelari — mencerminkan energi, konsistensi, dan daya juang.</p>
+                                    <p>Penggunaan warna biru dan oranye merepresentasikan harmoni antara alam pesisir dan semangat sportivitas — memberi kesan segar, optimis, dan penuh energi. Desain dibuat sederhana, modern, dan mudah dikenali, sehingga fleksibel diaplikasikan pada berbagai media seperti jersey, medal, materi promosi, hingga kebutuhan digital.</p>
                                 </div>
 
                                 <div class="d-flex flex-column justify-content-center animate-box animate__animated animated" data-animate="animate__fadeInLeft">
@@ -246,7 +251,7 @@
                                         </div>
                                         <div class="col">
                                             <div class="about-highlight-box">
-                                                <span class="counter about-highlight-text" data-target="3"></span>
+                                                <span class="counter about-highlight-text" data-target="2"></span>
                                                 <h5>Categories</h5>
                                             </div>
                                         </div>
@@ -386,16 +391,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 grid-spacer-2 w-100">
+                    <div class="row row-cols-xl-2 row-cols-md-2 row-cols-1 grid-spacer-2 w-100">
                         <div class="col">
                             <div class="card card-service animate-box animate__animated animated-delay-fast" data-animate="animate__fadeInRight">
                                 <div class="image-container">
                                     <div class="service-icon-container">
                                         <div class="service-icon">
-                                            <img src="{{ asset('assets/images/Icon-5.png') }}" alt="Service Image" class="img-fluid">
+                                            <img src="{{ asset('assets/images/Icon-5.png') }}" alt="5K Fun Run" class="img-fluid">
                                         </div>
                                     </div>
-                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="Service Image" class="service-img">
+                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="5K Fun Run" class="service-img">
                                     <div class="service-detail-container">
                                         <div class="service-detail">
                                             <h4 class="secondary-accent">5K Fun Run</h4>
@@ -416,61 +421,13 @@
                                 <div class="image-container">
                                     <div class="service-icon-container">
                                         <div class="service-icon">
-                                            <img src="{{ asset('assets/images/Icon-6.png') }}" alt="10K Challenge" class="img-fluid">
+                                            <img src="{{ asset('assets/images/Icon-6.png') }}" alt="12.9K Coastal Run" class="img-fluid">
                                         </div>
                                     </div>
-                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="10K Challenge" class="service-img">
+                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="12.9K Coastal Run" class="service-img">
                                     <div class="service-detail-container">
                                         <div class="service-detail">
-                                            <h4 class="secondary-accent">10K Challenge</h4>
-                                            <div>
-                                                <a href="#" class="service-btn">
-                                                    <span class="icon-circle">
-                                                        <i class="fa-solid fa-arrow-right"></i>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-service animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                                <div class="image-container">
-                                    <div class="service-icon-container">
-                                        <div class="service-icon">
-                                            <img src="{{ asset('assets/images/Icon-7.png') }}" alt="21K Half Marathon" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="21K Half Marathon" class="service-img">
-                                    <div class="service-detail-container">
-                                        <div class="service-detail">
-                                            <h4 class="secondary-accent">21K Half Marathon</h4>
-                                            <div>
-                                                <a href="#" class="service-btn">
-                                                    <span class="icon-circle">
-                                                        <i class="fa-solid fa-arrow-right"></i>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-service animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInRight">
-                                <div class="image-container">
-                                    <div class="service-icon-container">
-                                        <div class="service-icon">
-                                            <img src="{{ asset('assets/images/Icon-8.png') }}" alt="Kids Dash" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <img src="{{ asset('assets/images/dummy-img-600x800.jpg') }}" alt="Kids Dash" class="service-img">
-                                    <div class="service-detail-container">
-                                        <div class="service-detail">
-                                            <h4 class="secondary-accent">Kids Dash 1K</h4>
+                                            <h4 class="secondary-accent">12.9K Coastal Run</h4>
                                             <div>
                                                 <a href="#" class="service-btn">
                                                     <span class="icon-circle">
@@ -498,9 +455,9 @@
                             <span class="sub-heading-title">Registration</span>
                         </div>
                         <h2>Choose Your Race Package</h2>
-                        <p style="max-width:560px; margin:0 auto;">Early bird slots are limited. Register now and save on your entry fee plus get exclusive race perks!</p>
+                        <p style="max-width:560px; margin:0 auto;">Dua kategori tersedia untuk semua level pelari. Daftar sekarang dan amankan slot Anda!</p>
                     </div>
-                    <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 grid-spacer-2">
+                    <div class="row row-cols-xl-2 row-cols-md-2 row-cols-1 grid-spacer-2" style="max-width: 860px; margin: 0 auto;">
                         <!-- 5K -->
                         <div class="col">
                             <div class="bcr-price-card animate-box animate__animated animated" data-animate="animate__fadeInUp">
@@ -521,61 +478,21 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- 10K -->
-                        <div class="col">
-                            <div class="bcr-price-card animate-box animate__animated animated" data-animate="animate__fadeInUp">
-                                <div class="bcr-price-badge" style="background:var(--accent-color-6);">Challenge</div>
-                                <div class="bcr-price-distance">10K</div>
-                                <div class="bcr-price-amount">Rp 200<span class="bcr-price-unit">K</span></div>
-                                <div class="bcr-price-phase">Early Bird</div>
-                                <ul class="bcr-price-features">
-                                    <li><i class="fa-solid fa-check"></i> Race Bib &amp; Chip Timing</li>
-                                    <li><i class="fa-solid fa-check"></i> Running Tee</li>
-                                    <li><i class="fa-solid fa-check"></i> Finisher Medal</li>
-                                    <li><i class="fa-solid fa-check"></i> Water &amp; Isotonic Station</li>
-                                    <li><i class="fa-solid fa-check"></i> Post-Race Festival Access</li>
-                                </ul>
-                                <a href="#" class="btn btn-accent" style="width:100%;justify-content:space-between;">
-                                    <span class="btn-title">Daftar Sekarang</span>
-                                    <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- 21K -->
+                        <!-- 12.9K -->
                         <div class="col">
                             <div class="bcr-price-card bcr-price-card--featured animate-box animate__animated animated" data-animate="animate__fadeInUp">
                                 <div class="bcr-price-featured-label">Most Popular</div>
-                                <div class="bcr-price-badge" style="background:var(--accent-color-2);">Half Marathon</div>
-                                <div class="bcr-price-distance">21K</div>
-                                <div class="bcr-price-amount">Rp 350<span class="bcr-price-unit">K</span></div>
+                                <div class="bcr-price-badge" style="background:var(--accent-color-2);">Coastal Run</div>
+                                <div class="bcr-price-distance">12.9K</div>
+                                <div class="bcr-price-amount">Rp 250<span class="bcr-price-unit">K</span></div>
                                 <div class="bcr-price-phase">Early Bird</div>
                                 <ul class="bcr-price-features">
                                     <li><i class="fa-solid fa-check"></i> Race Bib &amp; Chip Timing</li>
                                     <li><i class="fa-solid fa-check"></i> Premium Running Tee</li>
                                     <li><i class="fa-solid fa-check"></i> Exclusive Finisher Medal</li>
-                                    <li><i class="fa-solid fa-check"></i> Water, Isotonic &amp; Gel Station</li>
-                                    <li><i class="fa-solid fa-check"></i> VIP Race Village Access</li>
-                                    <li><i class="fa-solid fa-check"></i> Official Certificate</li>
-                                </ul>
-                                <a href="#" class="btn btn-accent" style="width:100%;justify-content:space-between;">
-                                    <span class="btn-title">Daftar Sekarang</span>
-                                    <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Kids -->
-                        <div class="col">
-                            <div class="bcr-price-card animate-box animate__animated animated" data-animate="animate__fadeInUp">
-                                <div class="bcr-price-badge" style="background:var(--accent-color-7);color:var(--primary);">Kids Dash</div>
-                                <div class="bcr-price-distance">1K</div>
-                                <div class="bcr-price-amount">Rp 75<span class="bcr-price-unit">K</span></div>
-                                <div class="bcr-price-phase">Ages 5–12</div>
-                                <ul class="bcr-price-features">
-                                    <li><i class="fa-solid fa-check"></i> Race Bib</li>
-                                    <li><i class="fa-solid fa-check"></i> Kids Running Tee</li>
-                                    <li><i class="fa-solid fa-check"></i> Finisher Medal</li>
-                                    <li><i class="fa-solid fa-check"></i> Refreshments</li>
+                                    <li><i class="fa-solid fa-check"></i> Water &amp; Isotonic Station</li>
                                     <li><i class="fa-solid fa-check"></i> Post-Race Festival Access</li>
+                                    <li><i class="fa-solid fa-check"></i> Official Certificate</li>
                                 </ul>
                                 <a href="#" class="btn btn-accent" style="width:100%;justify-content:space-between;">
                                     <span class="btn-title">Daftar Sekarang</span>
@@ -588,63 +505,131 @@
             </div>
         </div>
 
+        <!-- Race Merch Section -->
+        <div class="section" id="merch" style="background-color: var(--primary);">
+            <div class="hero-container">
+                <div class="d-flex flex-column gspace-5">
+                    <div class="text-center animate-box animate__animated animated" data-animate="animate__fadeInUp">
+                        <div class="sub-heading justify-content-center">
+                            <i class="fa-solid fa-circle accent-color-2"></i>
+                            <span class="sub-heading-title">Race Pack</span>
+                        </div>
+                        <h2 class="secondary-accent">What You'll Get</h2>
+                        <p class="secondary-accent" style="max-width:560px; margin:0 auto; opacity:0.8;">Setiap peserta mendapatkan race pack eksklusif yang dirancang khusus untuk Balikpapan Coastal Running 2026.</p>
+                    </div>
+
+                    <!-- Merch Grid — 3 items 1:1 -->
+                    <div class="bcr-merch-grid">
+                        <!-- Jersey 5K / Official Runner -->
+                        <div class="bcr-merch-item animate-box animate__animated animated" data-animate="animate__fadeInUp">
+                            <div class="bcr-merch-img-wrap">
+                                <img src="{{ asset('assets/images/merch/jersey1.png') }}" alt="Official Runner Jersey BCR 2026" class="bcr-merch-img">
+                                <div class="bcr-merch-overlay">
+                                    <span class="bcr-merch-tag"><i class="fa-solid fa-shirt"></i> Jersey Official</span>
+                                </div>
+                            </div>
+                            <div class="bcr-merch-label">
+                                <h5 class="secondary-accent">Jersey Official Runner</h5>
+                                <p class="secondary-accent" style="opacity:0.7; font-size:14px; margin:0;">Tersedia untuk peserta 5K &amp; 12.9K</p>
+                            </div>
+                        </div>
+
+                        <!-- Jersey Pacer -->
+                        <div class="bcr-merch-item animate-box animate__animated animated-delay-fast" data-animate="animate__fadeInUp">
+                            <div class="bcr-merch-img-wrap">
+                                <img src="{{ asset('assets/images/merch/jersey2.png') }}" alt="Jersey Pacer BCR 2026" class="bcr-merch-img">
+                                <div class="bcr-merch-overlay">
+                                    <span class="bcr-merch-tag"><i class="fa-solid fa-shirt"></i> Jersey Pacer</span>
+                                </div>
+                            </div>
+                            <div class="bcr-merch-label">
+                                <h5 class="secondary-accent">Jersey Pacer Eksklusif</h5>
+                                <p class="secondary-accent" style="opacity:0.7; font-size:14px; margin:0;">Desain gradient biru–oranye khas BCR 2026</p>
+                            </div>
+                        </div>
+
+                        <!-- Finisher Medal -->
+                        <div class="bcr-merch-item animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInUp">
+                            <div class="bcr-merch-img-wrap">
+                                <img src="{{ asset('assets/images/merch/medal.png') }}" alt="Finisher Medal BCR 2026" class="bcr-merch-img">
+                                <div class="bcr-merch-overlay">
+                                    <span class="bcr-merch-tag"><i class="fa-solid fa-medal"></i> Finisher Medal</span>
+                                </div>
+                            </div>
+                            <div class="bcr-merch-label">
+                                <h5 class="secondary-accent">Medali Finisher</h5>
+                                <p class="secondary-accent" style="opacity:0.7; font-size:14px; margin:0;">5K &amp; 12.9K Finisher — Carry The Miles</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
         <!-- FAQ Section -->
-        <div class="section-wrapper py-0" id="faq">
-            <div class="section section-academy">
-                <div class="hero-container">
-                    <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5 align-items-start">
-                        <div class="col animate-box animate__animated animated" data-animate="animate__fadeInLeft">
+        <div class="section bcr-faq-section" id="faq">
+            <div class="hero-container">
+                <div class="d-flex flex-column gspace-5">
+
+                    <!-- FAQ Header -->
+                    <div class="bcr-faq-header animate-box animate__animated animated" data-animate="animate__fadeInUp">
+                        <div class="bcr-faq-header-left">
                             <div class="sub-heading">
                                 <i class="fa-solid fa-circle" style="color:var(--accent-color-7);"></i>
-                                <span class="sub-heading-title secondary-accent">FAQ</span>
+                                <span class="sub-heading-title">FAQ</span>
                             </div>
                             <h2 class="secondary-accent">Frequently Asked Questions</h2>
-                            <p class="secondary-accent" style="opacity:0.8;">Have questions? We've got answers. If you don't find what you need, reach out to us directly.</p>
-                            <a href="#contact" class="btn btn-accent" style="width:fit-content;">
+                            <p class="secondary-accent" style="opacity:0.8; margin-bottom:0;">Punya pertanyaan? Kami siap menjawab. Jika tidak menemukan jawaban, hubungi kami langsung.</p>
+                        </div>
+                        <div class="bcr-faq-header-right">
+                            <a href="#contact" class="btn btn-accent">
                                 <span class="btn-title">Contact Us</span>
                                 <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
                             </a>
                         </div>
-                        <div class="col animate-box animate__animated animated" data-animate="animate__fadeInRight">
-                            <div class="bcr-faq-list">
-                                <div class="bcr-faq-item">
-                                    <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
-                                        <span>Kapan pendaftaran ditutup?</span>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </button>
-                                    <div class="bcr-faq-answer">Pendaftaran Early Bird dibuka hingga 31 Januari 2026. Pendaftaran reguler akan ditutup pada 28 Februari 2026 atau saat kuota penuh.</div>
-                                </div>
-                                <div class="bcr-faq-item">
-                                    <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
-                                        <span>Apakah ada batas usia minimum?</span>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </button>
-                                    <div class="bcr-faq-answer">Kategori 5K &amp; 10K terbuka untuk usia 15 tahun ke atas. Kategori 21K untuk usia 18 tahun ke atas. Kids Dash 1K untuk usia 5–12 tahun.</div>
-                                </div>
-                                <div class="bcr-faq-item">
-                                    <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
-                                        <span>Di mana lokasi race pack pengambilan?</span>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </button>
-                                    <div class="bcr-faq-answer">Race pack dapat diambil di lokasi yang akan diumumkan H-2 sebelum hari perlombaan. Peserta wajib membawa bukti registrasi dan KTP.</div>
-                                </div>
-                                <div class="bcr-faq-item">
-                                    <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
-                                        <span>Apakah pembayaran bisa melalui transfer bank?</span>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </button>
-                                    <div class="bcr-faq-answer">Ya, kami menerima berbagai metode pembayaran termasuk transfer bank, dompet digital (GoPay, OVO, Dana), dan kartu kredit/debit.</div>
-                                </div>
-                                <div class="bcr-faq-item">
-                                    <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
-                                        <span>Bagaimana jika saya tidak bisa hadir setelah mendaftar?</span>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </button>
-                                    <div class="bcr-faq-answer">Biaya pendaftaran tidak dapat dikembalikan. Namun, Anda dapat melakukan transfer bib kepada peserta lain dengan menghubungi panitia minimal 7 hari sebelum acara.</div>
-                                </div>
-                            </div>
+                    </div>
+
+                    <!-- FAQ Accordion List -->
+                    <div class="bcr-faq-list animate-box animate__animated animated" data-animate="animate__fadeInUp">
+                        <div class="bcr-faq-item">
+                            <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                <span>Kapan pendaftaran ditutup?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="bcr-faq-answer">Pendaftaran Early Bird dibuka hingga 31 Januari 2026. Pendaftaran reguler akan ditutup pada 28 Februari 2026 atau saat kuota penuh.</div>
+                        </div>
+                        <div class="bcr-faq-item">
+                            <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                <span>Apakah ada batas usia minimum?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="bcr-faq-answer">Kategori 5K terbuka untuk usia 12 tahun ke atas. Kategori 12.9K terbuka untuk usia 15 tahun ke atas.</div>
+                        </div>
+                        <div class="bcr-faq-item">
+                            <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                <span>Di mana lokasi race pack pengambilan?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="bcr-faq-answer">Race pack dapat diambil di lokasi yang akan diumumkan H-2 sebelum hari perlombaan. Peserta wajib membawa bukti registrasi dan KTP.</div>
+                        </div>
+                        <div class="bcr-faq-item">
+                            <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                <span>Apakah pembayaran bisa melalui transfer bank?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="bcr-faq-answer">Ya, kami menerima berbagai metode pembayaran termasuk transfer bank, dompet digital (GoPay, OVO, Dana), dan kartu kredit/debit.</div>
+                        </div>
+                        <div class="bcr-faq-item">
+                            <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                <span>Bagaimana jika saya tidak bisa hadir setelah mendaftar?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="bcr-faq-answer">Biaya pendaftaran tidak dapat dikembalikan. Namun, Anda dapat melakukan transfer bib kepada peserta lain dengan menghubungi panitia minimal 7 hari sebelum acara.</div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

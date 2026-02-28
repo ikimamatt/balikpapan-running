@@ -1155,3 +1155,153 @@
         --bs-gutter-y: 100px;
     }
 }
+
+/* ================================================ */
+/* BCR Custom Component Responsive                  */
+/* ================================================ */
+
+/* --- Tablet (≤1025px) --- */
+@media screen and (max-width: 1025px) {
+
+    /* Hero wrapper: stack vertical */
+    .bcr-hero-wrapper {
+        flex-direction: column;
+        gap: 40px;
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+
+    .bcr-hero-left {
+        flex: 1 1 100%;
+        width: 100%;
+        gap: 24px;
+    }
+
+    .bcr-hero-right {
+        flex: 1 1 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Event card full width */
+    .bcr-event-card {
+        max-width: 100%;
+    }
+
+    /* Title font scale */
+    .bcr-hero-title {
+        font-size: clamp(36px, 5vw, 60px);
+    }
+
+    /* Stats row shrink */
+    .bcr-stat {
+        padding: 0 20px 0 0;
+    }
+
+    .bcr-stat-num {
+        font-size: 24px;
+    }
+
+    .bcr-stat-divider {
+        margin-right: 20px;
+    }
+}
+
+/* --- Mobile (≤767px) --- */
+@media screen and (max-width: 767px) {
+
+    /* Hero title */
+    .bcr-hero-title {
+        font-size: clamp(32px, 9vw, 52px);
+        letter-spacing: 1px !important;
+    }
+
+    /* Tagline */
+    .bcr-tagline {
+        font-size: clamp(14px, 4vw, 20px);
+        letter-spacing: 2px;
+    }
+
+    .bcr-tagline-wrapper::before {
+        width: 24px;
+    }
+
+    /* Countdown — compact */
+    .bcr-countdown {
+        gap: 8px;
+    }
+
+    .bcr-countdown-num {
+        font-size: 26px;
+        min-width: 54px;
+        padding: 10px 8px;
+    }
+
+    .bcr-countdown-unit {
+        font-size: 9px;
+    }
+
+    .bcr-countdown-sep {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+
+    .bcr-countdown-label {
+        font-size: 10px;
+    }
+
+    /* Stats row: wrap ke 2 baris */
+    .bcr-stats-row {
+        flex-wrap: wrap;
+        gap: 16px 0;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .bcr-stat {
+        padding: 0 16px 0 0;
+        min-width: 28%;
+    }
+
+    .bcr-stat-num {
+        font-size: 20px;
+    }
+
+    .bcr-stat-label {
+        font-size: 10px;
+    }
+
+    .bcr-stat-divider {
+        height: 32px;
+        margin-right: 16px;
+    }
+
+    /* Event card */
+    .bcr-event-card {
+        padding: 24px;
+        gap: 16px;
+        border-radius: 18px;
+    }
+
+    .bcr-event-card-title {
+        font-size: 17px;
+    }
+
+    .bcr-event-card-desc {
+        font-size: 13px;
+    }
+
+    .bcr-meta-item {
+        font-size: 12.5px;
+    }
+
+    /* Hero wrapper gap */
+    .bcr-hero-wrapper {
+        gap: 32px;
+    }
+
+    /* Merch grid: 1 kolom di mobile */
+    .bcr-merch-grid {
+        grid-template-columns: 1fr;
+    }
+}
