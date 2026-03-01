@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adelux</title>
+    <title>Adelux Balikpapan Coastal Running</title>
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}?v={{ time() }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}?v={{ time() }}">
     <link rel="web icon" href="{{ asset('assets/images/favicon.ico') }}">
@@ -230,7 +230,7 @@
                         </div>
                         <div class="d-flex flex-column gspace-2">
                             <div class="about-description-container">
-                                <div class="animate-box animate__animated animated" data-animate="animate__fadeInLeft">
+                                <div class="animate-box animate__animated animated" data-animate="animate__fadeInLeft" style="text-align: justify;">
                                     <p>Balikpapan Coastal Running 2026 dirancang sebagai event lari tahunan yang merepresentasikan semangat hidup sehat, kebersamaan komunitas, serta karakter khas kota Balikpapan sebagai kota pesisir. Logo ini mengambil inspirasi dari elemen <em>coastal</em> seperti laut, ombak, dan matahari yang diwujudkan melalui bentuk dinamis menyerupai gerak pelari — mencerminkan energi, konsistensi, dan daya juang.</p>
                                     <p>Penggunaan warna biru dan oranye merepresentasikan harmoni antara alam pesisir dan semangat sportivitas — memberi kesan segar, optimis, dan penuh energi. Desain dibuat sederhana, modern, dan mudah dikenali, sehingga fleksibel diaplikasikan pada berbagai media seperti jersey, medal, materi promosi, hingga kebutuhan digital.</p>
                                 </div>

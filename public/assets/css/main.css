@@ -1246,10 +1246,10 @@ ul {
 }
 
 .bcr-event-card {
-    background-color: rgba(255, 255, 255, 0.06);
+    background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 24px;
     padding: 36px;
     display: flex;
@@ -4231,14 +4231,14 @@ ul {
     cursor: pointer;
     text-align: left;
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     font-family: var(--font-family-1);
 }
 
 .bcr-faq-question i {
     color: var(--accent-color-7);
-    font-size: 13px;
+    font-size: 18px;
     flex-shrink: 0;
     transition: transform 300ms;
 }
