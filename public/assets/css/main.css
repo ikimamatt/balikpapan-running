@@ -73,9 +73,9 @@ Version: 1.0.0
     --accent-color-4: #FAFAFA;
     --accent-color-5: #E4E4E4;
     --accent-color-6: #f05832;
-    --accent-color-7: #fdcd19;
+    --accent-color-7: #ff5455;
     --accent-color-8: #1c4b9b;
-    --accent-color-9: #5cc5e8;
+    --accent-color-9: #2a5fbf;
     --accent-transparent-white: #FFFFFF00;
     --accent-transparent-white-2: #FFFFFF14;
     --accent-transparent-black: #0000005C;
@@ -1823,8 +1823,8 @@ ul {
 }
 
 .navbar.is-scrolled {
-    background-color: var(--accent-transparent-black-2);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(1, 14, 30, 0.75);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1868,11 +1868,14 @@ ul {
 }
 
 .navbar {
-    background-color: transparent;
+    background-color: rgba(1, 14, 30, 0.4);
     border-radius: 0;
     position: relative;
     padding: 0px;
     z-index: 1;
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .navbar::before {
@@ -1885,7 +1888,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 5px 20px 5px 20px;
+    padding: 8px 40px;
 }
 
 .navbar .logo-container {
@@ -3806,58 +3809,7 @@ ul {
 .bcr-countdown-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-}
-
-.bcr-countdown-label {
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.55);
-}
-
-.bcr-countdown {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-}
-
-.bcr-countdown-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 12px;
-    padding: 10px 18px;
-    min-width: 68px;
-}
-
-.bcr-countdown-num {
-    font-size: 32px;
-    font-weight: 900;
-    color: #ffffff !important;
-    line-height: 1;
-    font-family: var(--font-family-1);
-}
-
-.bcr-countdown-unit {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: rgba(255, 255, 255, 0.6);
-    margin-top: 4px;
-}
-
-.bcr-countdown-sep {
-    font-size: 28px;
-    font-weight: 900;
-    color: #fff;
-    line-height: 1;
-    opacity: 0.7;
-    margin-bottom: 18px;
+    gap: 6px;
 }
 
 /* ===== BCR Pricing Cards ===== */
@@ -3881,7 +3833,7 @@ ul {
 
 .bcr-price-card--featured {
     background-color: var(--primary);
-    border-color: var(--accent-color-7);
+    border-color: var(--accent-color-8);
 }
 
 .bcr-price-card--featured .bcr-price-distance,
@@ -3898,7 +3850,7 @@ ul {
 }
 
 .bcr-price-card--featured .bcr-price-features li i {
-    color: var(--accent-color-7);
+    color: var(--accent-color-6);
 }
 
 .bcr-price-featured-label {
@@ -3906,8 +3858,8 @@ ul {
     top: -14px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--accent-color-7);
-    color: var(--primary);
+    background: var(--accent-color-8);
+    color: #fff;
     font-size: 11px;
     font-weight: 800;
     text-transform: uppercase;
@@ -3984,68 +3936,55 @@ ul {
     flex-shrink: 0;
 }
 
-/* ===== BCR Countdown Timer ===== */
-.bcr-countdown-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .bcr-countdown-label {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.5);
     font-family: var(--font-family-2);
+    margin-bottom: 2px;
 }
 
 .bcr-countdown {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 16px;
 }
 
 .bcr-countdown-block {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 4px;
+    padding: 0 24px 0 0;
 }
 
 .bcr-countdown-num {
     font-family: var(--font-family-1);
-    font-size: 40px;
-    font-weight: 900;
-    color: var(--accent-color-7);
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffffff;
     line-height: 1;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 10px;
-    min-width: 72px;
-    text-align: center;
-    padding: 12px 10px;
-    backdrop-filter: blur(4px);
 }
 
 .bcr-countdown-unit {
-    font-size: 10px;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     font-family: var(--font-family-2);
 }
 
-.bcr-countdown-sep {
-    font-family: var(--font-family-1);
-    font-size: 28px;
-    font-weight: 900;
-    color: #fff;
-    line-height: 1;
-    padding-bottom: 18px;
-    align-self: flex-end;
+.bcr-countdown-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-right: 24px;
+    flex-shrink: 0;
 }
 
 /* ===== BCR Official Tagline ===== */
@@ -4071,9 +4010,9 @@ ul {
     font-weight: 800;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: var(--accent-color-7);
+    color: var(--accent-color-2);
     line-height: 1;
-    background: linear-gradient(90deg, var(--accent-color-7) 0%, var(--accent-color-6) 60%, var(--accent-color-2) 100%);
+    background: linear-gradient(90deg, var(--accent-color-2) 0%, var(--accent-color-6) 50%, var(--accent-color-8) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -4171,6 +4110,67 @@ ul {
     .bcr-merch-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* ===== BCR Sponsor Section ===== */
+.bcr-sponsor-section {
+    background-color: var(--primary);
+    padding: 32px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.bcr-sponsor-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.bcr-sponsor-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+    font-family: var(--font-family-2);
+    white-space: nowrap;
+}
+
+.bcr-sponsor-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+
+.bcr-sponsor-logo-wrap {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bcr-sponsor-logo {
+    max-height: 50px;
+    max-width: 160px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.55;
+    transition: opacity 300ms ease;
+}
+
+.bcr-sponsor-logo:hover {
+    opacity: 0.9;
+}
+
+.bcr-sponsor-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.12);
+    flex-shrink: 0;
 }
 
 /* ===== BCR FAQ Section ===== */

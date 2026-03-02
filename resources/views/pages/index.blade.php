@@ -19,7 +19,6 @@
     <!-- Header Section -->
     <header>
         <div class="navbar-container">
-            <div class="hero-container">
                 <nav class="navbar navbar-expand-xl">
                     <div class="navbar-nav-container">
                 
@@ -66,16 +65,12 @@
                         <div>
                             <a href="#" class="btn btn-accent">
                                 <span class="btn-title" style="padding: 10px 15px; font-size: 14px;">Register Now!</span>
-                                <!-- <span class="icon-circle">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </span> -->
                             </a>
                         </div>
                     </div>
                 
                     </div>
                 </nav>
-            </div>
         </div>
     </header>
 
@@ -130,20 +125,20 @@
                                         <span class="bcr-countdown-num" id="cd-days">00</span>
                                         <span class="bcr-countdown-unit">Days</span>
                                     </div>
-                                    <span class="bcr-countdown-sep">:</span>
+                                    <div class="bcr-countdown-divider"></div>
                                     <div class="bcr-countdown-block">
                                         <span class="bcr-countdown-num" id="cd-hours">00</span>
                                         <span class="bcr-countdown-unit">Hours</span>
                                     </div>
-                                    <span class="bcr-countdown-sep">:</span>
+                                    <div class="bcr-countdown-divider"></div>
                                     <div class="bcr-countdown-block">
                                         <span class="bcr-countdown-num" id="cd-mins">00</span>
-                                        <span class="bcr-countdown-unit">Mins</span>
+                                        <span class="bcr-countdown-unit">Minutes</span>
                                     </div>
-                                    <span class="bcr-countdown-sep">:</span>
+                                    <div class="bcr-countdown-divider"></div>
                                     <div class="bcr-countdown-block">
                                         <span class="bcr-countdown-num" id="cd-secs">00</span>
-                                        <span class="bcr-countdown-unit">Secs</span>
+                                        <span class="bcr-countdown-unit">Seconds</span>
                                     </div>
                                 </div>
                             </div>
@@ -520,17 +515,17 @@
                     </div>
 
                     <!-- Merch Grid — 3 items 1:1 -->
-                    <div class="bcr-merch-grid">
+                    <div class="bcr-merch-grid" style="grid-template-columns: 1fr; max-width: 420px; margin: 0 auto;">
                         <!-- Jersey 5K / Official Runner -->
                         <div class="bcr-merch-item animate-box animate__animated animated" data-animate="animate__fadeInUp">
                             <div class="bcr-merch-img-wrap">
-                                <img src="{{ asset('assets/images/merch/jersey1.png') }}" alt="Official Runner Jersey BCR 2026" class="bcr-merch-img">
+                                <img src="{{ asset('assets/images/merch/racepack.png') }}" alt="Race Pack BCR 2026" class="bcr-merch-img">
                                 <div class="bcr-merch-overlay">
-                                    <span class="bcr-merch-tag"><i class="fa-solid fa-shirt"></i> Jersey Official</span>
+                                    <span class="bcr-merch-tag"><i class="fa-solid fa-shirt"></i> Race Pack</span>
                                 </div>
                             </div>
                             <div class="bcr-merch-label">
-                                <h5 class="secondary-accent">Jersey Official Runner</h5>
+                                <h5 class="secondary-accent">Race Pack</h5>
                                 <p class="secondary-accent" style="opacity:0.7; font-size:14px; margin:0;">Tersedia untuk peserta 5K &amp; 12.9K</p>
                             </div>
                         </div>
@@ -550,7 +545,7 @@
                         </div> -->
 
                         <!-- Finisher Medal -->
-                        <div class="bcr-merch-item animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInUp">
+                        <!-- <div class="bcr-merch-item animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInUp">
                             <div class="bcr-merch-img-wrap">
                                 <img src="{{ asset('assets/images/merch/medal.png') }}" alt="Finisher Medal BCR 2026" class="bcr-merch-img">
                                 <div class="bcr-merch-overlay">
@@ -561,9 +556,28 @@
                                 <h5 class="secondary-accent">Medali Finisher</h5>
                                 <p class="secondary-accent" style="opacity:0.7; font-size:14px; margin:0;">5K &amp; 12.9K Finisher — Carry The Miles</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sponsor Section -->
+        <div class="bcr-sponsor-section">
+            <div class="hero-container">
+                <div class="bcr-sponsor-wrapper animate-box animate__animated animated" data-animate="animate__fadeInUp">
+                    <span class="bcr-sponsor-label">Our Sponsors</span>
+                    <div class="bcr-sponsor-logos">
+                        <div class="bcr-sponsor-logo-wrap">
+                            <img src="{{ asset('assets/images/sponsors/lexa.png') }}" alt="Lexa Event" class="bcr-sponsor-logo">
+                        </div>
+                        <div class="bcr-sponsor-divider"></div>
+                        <div class="bcr-sponsor-logo-wrap">
+                            <img src="{{ asset('assets/images/sponsors/kepalabatu.png') }}" alt="Kepala Batu" class="bcr-sponsor-logo">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
