@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adelux Balikpapan Coastal Running</title>
+    <title>Balikpapan Coastal Running</title>
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}?v={{ time() }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}?v={{ time() }}">
     <link rel="web icon" href="{{ asset('assets/images/favicon.ico') }}">
+    <style>
+        .navbar-nav .nav-link {
+            font-size: 14px !important;
+            color: #ffffff !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -27,7 +33,7 @@
                     <!-- Nav Link Container -->
                     <div class="nav-link-container ms-auto">
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-size: 100px; font-weight: 700;">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#home">Home</a>
                                 </li>
@@ -59,10 +65,10 @@
                     <div class="navbar-cta-container">
                         <div>
                             <a href="#" class="btn btn-accent">
-                                <span class="btn-title">Register Now</span>
-                                <span class="icon-circle">
+                                <span class="btn-title" style="padding: 10px 15px; font-size: 14px;">Register Now!</span>
+                                <!-- <span class="icon-circle">
                                     <i class="fa-solid fa-arrow-right"></i>
-                                </span>
+                                </span> -->
                             </a>
                         </div>
                     </div>
@@ -100,7 +106,7 @@
     <main>
         <!-- Banner Home Section -->
         <div class="pb-0" id="home" style="padding-top: 0;">
-            <div class="banner-home-container" style="border-radius: 0; background-image: url('{{ asset('assets/images/running/jumbotron.jpg') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
+            <div class="banner-home-container" style="border-radius: 0; background-image: url('{{ asset('assets/images/running/jumbotron_kv.png') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
                 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.72); z-index: -1;"></div>
                 <div class="hero-container">
                     <div class="bcr-hero-wrapper">
@@ -109,11 +115,11 @@
                                 <i class="fa-solid fa-flag-checkered"></i>
                                 <span>East Kalimantan's Biggest Run</span>
                             </div> -->
-                            <h1 class="secondary-accent bcr-hero-title">Balikpapan<br>Coastal Running<br><span class="bcr-year">2026</span></h1>
+                            <h1 class="secondary-accent bcr-hero-title">Balikpapan<br>Coastal Running<br>2026</span></h1>
 
                             <!-- Official Tagline -->
-                            <div class="bcr-tagline-wrapper">
-                                <span class="bcr-tagline">CARRY THE MILES</span>
+                            <div class="bcr-tagline-wrapper" >
+                                <img src="{{ asset('assets/images/running/CARRY THE MILES-05.png') }}" alt="CARRY THE MILES" class="img-fluid" style="max-height: 40px;">
                             </div>
 
                             <!-- Countdown Timer -->
@@ -180,9 +186,8 @@
                                         <span>5K &bull; 12.9K</span>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-accent bcr-register-btn">
-                                    <span class="btn-title">Register Now</span>
-                                    <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+                                <a href="#" class="btn btn-accent bcr-register-btn justify-content-center">
+                                    <span class="btn-title">Register Now!</span>
                                 </a>
                             </div>
                         </div>
@@ -202,7 +207,8 @@
         </div>
         
         <!-- About Section -->
-        <div class="section" id="about">
+        <div class="section" id="about" style="background-image: url('{{ asset('assets/images/running/jumbotron_kv.png') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.72); z-index: -1;"></div>
             <div class="hero-container">
                 <div class="about-wrapper">
                     <div class="about-image-container">
@@ -218,41 +224,35 @@
                         </div>
                     </div>
 
-                    <div class="about-content-description">
+                    <div class="about-content-description" style="color: white;">
                         <div class="d-flex flex-column gspace-2 animate-box animate__animated animated" data-animate="animate__fadeInRight">
                             <div>
                                 <div class="sub-heading">
                                     <i class="fa-solid fa-circle accent-color-2"></i>
-                                    <span class="sub-heading-title">About Us</span>
+                                    <span class="sub-heading-title text-dark" style="color: white;">About Us</span>
                                 </div>
                             </div>
-                            <h2>More Than Just a Race, It's an Experience.</h2>
+                            <h2 style="color: white;">More Than Just a Race, It's an Experience.</h2>
                         </div>
-                        <div class="d-flex flex-column gspace-2">
-                            <div class="about-description-container">
+                        <div class="d-flex flex-column gspace-2 text-white">
+                            <div class="about-description-container" style="color: white;">
                                 <div class="animate-box animate__animated animated" data-animate="animate__fadeInLeft" style="text-align: justify;">
-                                    <p>Balikpapan Coastal Running 2026 dirancang sebagai event lari tahunan yang merepresentasikan semangat hidup sehat, kebersamaan komunitas, serta karakter khas kota Balikpapan sebagai kota pesisir. Logo ini mengambil inspirasi dari elemen <em>coastal</em> seperti laut, ombak, dan matahari yang diwujudkan melalui bentuk dinamis menyerupai gerak pelari — mencerminkan energi, konsistensi, dan daya juang.</p>
-                                    <p>Penggunaan warna biru dan oranye merepresentasikan harmoni antara alam pesisir dan semangat sportivitas — memberi kesan segar, optimis, dan penuh energi. Desain dibuat sederhana, modern, dan mudah dikenali, sehingga fleksibel diaplikasikan pada berbagai media seperti jersey, medal, materi promosi, hingga kebutuhan digital.</p>
+                                    <p class="text-white">Balikpapan Coastal Running 2026 dirancang sebagai event lari tahunan yang merepresentasikan semangat hidup sehat, kebersamaan komunitas, serta karakter khas kota Balikpapan sebagai kota pesisir. Logo ini mengambil inspirasi dari elemen <em>coastal</em> seperti laut, ombak, dan matahari yang diwujudkan melalui bentuk dinamis menyerupai gerak pelari — mencerminkan energi, konsistensi, dan daya juang.</p>
+                                    <p class="text-white">Penggunaan warna biru dan oranye merepresentasikan harmoni antara alam pesisir dan semangat sportivitas — memberi kesan segar, optimis, dan penuh energi. Desain dibuat sederhana, modern, dan mudah dikenali, sehingga fleksibel diaplikasikan pada berbagai media seperti jersey, medal, materi promosi, hingga kebutuhan digital.</p>
                                 </div>
 
                                 <div class="d-flex flex-column justify-content-center animate-box animate__animated animated" data-animate="animate__fadeInLeft">
                                     <div class="row row-cols-md-3 row-cols-1 grid-spacer-4">
                                         <div class="col">
                                             <div class="about-highlight-box">
-                                                <span class="counter counter-year about-highlight-text" data-target="2026"></span>
-                                                <h5>Established</h5>
+                                                <span class="counter about-highlight-text" data-target="5000" style="color: white;"></span>
+                                                <h5 style="color: white;">Runners</h5>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="about-highlight-box">
-                                                <span class="counter about-highlight-text" data-target="5000"></span>
-                                                <h5>Runners</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="about-highlight-box">
-                                                <span class="counter about-highlight-text" data-target="2"></span>
-                                                <h5>Categories</h5>
+                                                <span class="counter about-highlight-text" data-target="2" style="color: white;"></span>
+                                                <h5 style="color: white;">Categories</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -265,7 +265,7 @@
         </div>
 
         <!-- Why Choose Us Section -->
-        <div class="section-wrapper py-0" id="why-choose-us">
+        <!-- <div class="section-wrapper py-0" id="why-choose-us">
             <div class="section section-chooseus">
                 <div class="hero-container">
                     <div class="d-flex flex-column flex-xl-row align-items-center gspace-100">
@@ -358,10 +358,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <!-- Service Section -->
-        <div class="section" id="service">
+        <!-- <div class="section" id="service">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-5">
                     <div class="service-title-container">
@@ -443,10 +443,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Registration Pricing Section -->
-        <div class="section" id="pricing">
+        <div class="section" id="pricing" style="background-image: url('{{ asset('assets/images/running/jumbotron_kv.png') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.72); z-index: -1;"></div>
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-5">
                     <div class="text-center animate-box animate__animated animated" data-animate="animate__fadeInUp">
@@ -454,8 +455,8 @@
                             <i class="fa-solid fa-circle accent-color-2"></i>
                             <span class="sub-heading-title">Registration</span>
                         </div>
-                        <h2>Choose Your Race Package</h2>
-                        <p style="max-width:560px; margin:0 auto;">Dua kategori tersedia untuk semua level pelari. Daftar sekarang dan amankan slot Anda!</p>
+                        <h2 class="text-white">Choose Your Race Package</h2>
+                        <p class="text-white" style="max-width:560px; margin:0 auto;">Dua kategori tersedia untuk semua level pelari. Daftar sekarang dan amankan slot Anda!</p>
                     </div>
                     <div class="row row-cols-xl-2 row-cols-md-2 row-cols-1 grid-spacer-2" style="max-width: 860px; margin: 0 auto;">
                         <!-- 5K -->
@@ -535,7 +536,7 @@
                         </div>
 
                         <!-- Jersey Pacer -->
-                        <div class="bcr-merch-item animate-box animate__animated animated-delay-fast" data-animate="animate__fadeInUp">
+                        <!-- <div class="bcr-merch-item animate-box animate__animated animated-delay-fast" data-animate="animate__fadeInUp">
                             <div class="bcr-merch-img-wrap">
                                 <img src="{{ asset('assets/images/merch/jersey2.png') }}" alt="Jersey Pacer BCR 2026" class="bcr-merch-img">
                                 <div class="bcr-merch-overlay">
@@ -546,7 +547,7 @@
                                 <h5 class="secondary-accent">Jersey Pacer Eksklusif</h5>
                                 <p class="secondary-accent" style="opacity:0.7; font-size:14px; margin:0;">Desain gradient biru–oranye khas BCR 2026</p>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Finisher Medal -->
                         <div class="bcr-merch-item animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInUp">
