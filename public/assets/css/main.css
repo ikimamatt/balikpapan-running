@@ -51,9 +51,7 @@ Version: 1.0.0
 /* 43. Footer Styles */
 
 /* 01. Import Vendor */
-@import url('../css/custom-fonts.css');
-@import url('../webfonts/font-family-montserrat.css');
-@import url('../webfonts/font-family-lato.css');
+@import url('../css/vendor/font-family-inter.css');
 @import url('../css/vendor/bootstrap.min.css');
 @import url('../css/vendor/fontawesome.css');
 @import url('../css/vendor/brands.css');
@@ -82,8 +80,8 @@ Version: 1.0.0
     --accent-transparent-white-2: #FFFFFF14;
     --accent-transparent-black: #0000005C;
     --accent-transparent-black-2: #00000087;
-    --font-family-1: "Zuume", "Monling", sans-serif;
-    --font-family-2: "Inter Tight", sans-serif;
+    --font-family-1: "Inter", sans-serif;
+    --font-family-2: "Inter", sans-serif;
     --animation-normal: 1.25s;
     --animation-slow: 2.25s;
     --animation-fast: 0.75s;
@@ -286,18 +284,18 @@ ul {
 }
 
 .btn-accent {
-    fill: var(--accent-color-7);
+    fill: #1c4b9b;
     transition: all 600ms;
-    background-color: var(--accent-color-7);
+    background-color: #1c4b9b;
 }
 
 .btn-accent:hover {
-    background-color: var(--accent-color-6);
+    background-color: #163b7a;
 }
 
 .btn-title {
     padding: 17px 17px 17px 17px;
-    color: var(--primary);
+    color: #ffffff;
     font-weight: 700;
 }
 
@@ -1148,7 +1146,7 @@ ul {
     height: 100%;
     position: relative;
     overflow: hidden;
-    padding: 180px 20px 100px 20px;
+    padding: 120px 20px 100px 20px;
     border-radius: 30px 30px 30px 30px;
 }
 
@@ -1221,14 +1219,14 @@ ul {
 .bcr-stat-num {
     font-size: 30px;
     font-weight: 800;
-    color: var(--accent-color-7);
+    color: #ffff;
     line-height: 1;
 }
 
 .bcr-stat-label {
     font-size: 12px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.7);
+    color: #ffff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1264,7 +1262,7 @@ ul {
 }
 
 .bcr-event-tag {
-    background-color: var(--accent-color-2);
+    background-color: #1c4b9b;
     color: #fff;
     font-size: 12px;
     font-weight: 700;
@@ -1808,7 +1806,7 @@ ul {
 /* 14. Header Styles */
 
 .navbar-container {
-    padding: 60px 60px 0px 60px;
+    padding: 0px 0px 0px 0px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -1820,22 +1818,32 @@ ul {
 
 .navbar-container.is-sticky {
     position: fixed;
-    padding-top: 15px;
+    padding-top: 0;
     animation: stickySlideDown 0.5s ease-in-out forwards;
 }
 
 .navbar.is-scrolled {
-    background-color: var(--secondary);
+    background-color: var(--accent-transparent-black-2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar.is-scrolled::before {
-    display: none;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: inherit;
+    background-color: inherit;
+    z-index: -1;
 }
 
 .navbar.is-scrolled .nav-link {
-    color: var(--primary) !important;
+    color: var(--secondary) !important;
 }
 
 .navbar.is-scrolled .nav-link:hover,
@@ -1860,25 +1868,15 @@ ul {
 }
 
 .navbar {
-    background-color: var(--accent-transparent-white-2);
-    border-radius: 20px 20px 20px 20px;
+    background-color: transparent;
+    border-radius: 0;
     position: relative;
     padding: 0px;
     z-index: 1;
 }
 
 .navbar::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    border-radius: inherit;
-    background-color: inherit;
-    z-index: -1;
+    display: none;
 }
 
 .navbar-nav-container {
@@ -1887,7 +1885,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 20px 20px 20px 20px;
+    padding: 5px 20px 5px 20px;
 }
 
 .navbar .logo-container {
@@ -3840,7 +3838,7 @@ ul {
 .bcr-countdown-num {
     font-size: 32px;
     font-weight: 900;
-    color: var(--accent-color-7);
+    color: #ffffff !important;
     line-height: 1;
     font-family: var(--font-family-1);
 }
@@ -3856,7 +3854,7 @@ ul {
 .bcr-countdown-sep {
     font-size: 28px;
     font-weight: 900;
-    color: var(--accent-color-7);
+    color: #fff;
     line-height: 1;
     opacity: 0.7;
     margin-bottom: 18px;
@@ -4044,7 +4042,7 @@ ul {
     font-family: var(--font-family-1);
     font-size: 28px;
     font-weight: 900;
-    color: var(--accent-color-7);
+    color: #fff;
     line-height: 1;
     padding-bottom: 18px;
     align-self: flex-end;
@@ -4062,7 +4060,7 @@ ul {
     display: block;
     width: 40px;
     height: 3px;
-    background: var(--accent-color-7);
+    background: #f05832;
     flex-shrink: 0;
     border-radius: 2px;
 }
