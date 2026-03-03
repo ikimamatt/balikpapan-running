@@ -12,6 +12,29 @@
             font-size: 14px !important;
             color: #ffffff !important;
         }
+
+        /* Make navbar transparent when at the top (Banner Home Section) */
+        .navbar:not(.is-scrolled) {
+            background-color: transparent !important;
+            border-bottom-color: transparent !important;
+            box-shadow: none !important;
+        }
+
+        /* Register Now button hover gradient */
+        .navbar-cta-container .btn-accent,
+        .bcr-register-btn {
+            background-size: 200% auto;
+            transition: background-position 0.5s ease-out, transform 0.2s ease, box-shadow 0.2s ease !important;
+        }
+        
+        .navbar-cta-container .btn-accent:hover,
+        .bcr-register-btn:hover {
+            background-image: linear-gradient(to right, #010e1e 0%, #1c4b9b 30%, #f05832 70%, #ff5455 100%) !important;
+            background-position: right center !important;
+            border-color: transparent !important;
+            transform: scale(1.02) !important;
+            box-shadow: 0 4px 15px rgba(240, 88, 50, 0.4) !important;
+        }
     </style>
 </head>
 <body>
@@ -56,8 +79,8 @@
                     </div>
             
                     <button class="nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars-staggered"></i>
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #1c4b9b; color: #ffffff;">
+                        <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
                     </button>
                 
                     <!-- Navbar Social Container -->
@@ -83,7 +106,7 @@
                     <div class="logo">
                         <img src="{{ asset('assets/images/running/BCR Logo-01.png') }}" class="logo" alt="Logo" style="height: 40px; width: auto;">
                     </div>
-                    <button class="close-btn"><span>X</span></button>
+                    <button class="close-btn" style="background-color: #1c4b9b; color: #ffffff; border: none; padding: 5px 10px; border-radius: 4px;"><span>X</span></button>
                 </div>
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
@@ -117,46 +140,48 @@
                                 <img src="{{ asset('assets/images/running/CARRY THE MILES-05.png') }}" alt="CARRY THE MILES" class="img-fluid" style="max-height: 40px;">
                             </div>
 
-                            <!-- Countdown Timer -->
-                            <div class="bcr-countdown-wrapper">
-                                <div class="bcr-countdown-label">Race Day Countdown</div>
-                                <div class="bcr-countdown" id="bcr-countdown">
-                                    <div class="bcr-countdown-block">
-                                        <span class="bcr-countdown-num" id="cd-days">00</span>
-                                        <span class="bcr-countdown-unit">Days</span>
-                                    </div>
-                                    <div class="bcr-countdown-divider"></div>
-                                    <div class="bcr-countdown-block">
-                                        <span class="bcr-countdown-num" id="cd-hours">00</span>
-                                        <span class="bcr-countdown-unit">Hours</span>
-                                    </div>
-                                    <div class="bcr-countdown-divider"></div>
-                                    <div class="bcr-countdown-block">
-                                        <span class="bcr-countdown-num" id="cd-mins">00</span>
-                                        <span class="bcr-countdown-unit">Minutes</span>
-                                    </div>
-                                    <div class="bcr-countdown-divider"></div>
-                                    <div class="bcr-countdown-block">
-                                        <span class="bcr-countdown-num" id="cd-secs">00</span>
-                                        <span class="bcr-countdown-unit">Seconds</span>
+                            <div style="display: flex; flex-direction: column; align-items: stretch; width: max-content; max-width: 100%;">
+                                <!-- Countdown Timer -->
+                                <div class="bcr-countdown-wrapper">
+                                    <div class="bcr-countdown-label">Race Day Countdown</div>
+                                    <div class="bcr-countdown" id="bcr-countdown" style="width: 100%;">
+                                        <div class="bcr-countdown-block">
+                                            <span class="bcr-countdown-num" id="cd-days">00</span>
+                                            <span class="bcr-countdown-unit">Days</span>
+                                        </div>
+                                        <div class="bcr-countdown-divider"></div>
+                                        <div class="bcr-countdown-block">
+                                            <span class="bcr-countdown-num" id="cd-hours">00</span>
+                                            <span class="bcr-countdown-unit">Hours</span>
+                                        </div>
+                                        <div class="bcr-countdown-divider"></div>
+                                        <div class="bcr-countdown-block">
+                                            <span class="bcr-countdown-num" id="cd-mins">00</span>
+                                            <span class="bcr-countdown-unit">Minutes</span>
+                                        </div>
+                                        <div class="bcr-countdown-divider"></div>
+                                        <div class="bcr-countdown-block">
+                                            <span class="bcr-countdown-num" id="cd-secs">00</span>
+                                            <span class="bcr-countdown-unit">Seconds</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="bcr-stats-row">
-                                <div class="bcr-stat">
-                                    <span class="bcr-stat-num">5,000+</span>
-                                    <span class="bcr-stat-label">Runners</span>
-                                </div>
-                                <div class="bcr-stat-divider"></div>
-                                <div class="bcr-stat">
-                                    <span class="bcr-stat-num">2</span>
-                                    <span class="bcr-stat-label">Categories</span>
-                                </div>
-                                <div class="bcr-stat-divider"></div>
-                                <div class="bcr-stat">
-                                    <span class="bcr-stat-num">12.9K</span>
-                                    <span class="bcr-stat-label">Longest Route</span>
+                                <div class="bcr-stats-row" style="width: 100%; border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 16px; margin-top: 16px;">
+                                    <div class="bcr-stat">
+                                        <span class="bcr-stat-num">5,000+</span>
+                                        <span class="bcr-stat-label">Runners</span>
+                                    </div>
+                                    <div class="bcr-stat-divider"></div>
+                                    <div class="bcr-stat">
+                                        <span class="bcr-stat-num">2</span>
+                                        <span class="bcr-stat-label">Categories</span>
+                                    </div>
+                                    <div class="bcr-stat-divider"></div>
+                                    <div class="bcr-stat">
+                                        <span class="bcr-stat-num">12.9K</span>
+                                        <span class="bcr-stat-label">Longest Route</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
