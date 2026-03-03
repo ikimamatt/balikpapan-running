@@ -609,7 +609,7 @@
 
 
         <!-- FAQ Section -->
-        <div class="section bcr-faq-section" id="faq" style="background-image: url('{{ asset('assets/images/running/background (3).png') }}'); background-size: auto; background-position: center 40%; position: relative; z-index: 1;">
+        <div class="section bcr-faq-section" id="faq" style="background-image: url('{{ asset('assets/images/running/background (2).png') }}'); background-size: auto; background-position: center 40%; position: relative; z-index: 1;">
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.72); z-index: -1;"></div>
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-5">
