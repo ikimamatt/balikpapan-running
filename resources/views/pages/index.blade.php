@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balikpapan Coastal Running</title>
+    <!-- Primary Meta Tags -->
+    <title>Balikpapan Coastal Running 2026</title>
+    <meta name="title" content="Balikpapan Coastal Running 2026 | Event Lari Terbesar Kaltim">
+    <meta name="description" content="Bergabunglah di Balikpapan Coastal Running 2026! Event lari pesisir terbesar di Kalimantan Timur. Pilih kategori 5K Fun Run atau 12.9K Coastal Run. Daftar secara online sekarang!">
+    <meta name="keywords" content="balikpapan running, balikpapan coastal running, event lari balikpapan, lomba lari kalimantan timur, lari 5k balikpapan, lari 10k balikpapan, wisata olahraga kalimantan">
+    <meta name="author" content="Balikpapan Coastal Running Committee">
+    <link rel="canonical" href="https://www.balikpapanrunning.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.balikpapanrunning.com/">
+    <meta property="og:title" content="Balikpapan Coastal Running 2026">
+    <meta property="og:description" content="Bergabunglah di Balikpapan Coastal Running 2026! Event lari pesisir terbesar di Kalimantan Timur dengan rute pemandangan laut yang spektakuler.">
+    <meta property="og:image" content="{{ asset('assets/images/running/jumbotron_kv.png') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.balikpapanrunning.com/">
+    <meta property="twitter:title" content="Balikpapan Coastal Running 2026">
+    <meta property="twitter:description" content="Bergabunglah di Balikpapan Coastal Running 2026! Event lari pesisir terbesar di Kalimantan Timur dengan rute pemandangan laut yang spektakuler.">
+    <meta property="twitter:image" content="{{ asset('assets/images/running/jumbotron_kv.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}?v={{ time() }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}?v={{ time() }}">
     <link rel="web icon" href="{{ asset('assets/images/favicon.ico') }}">
@@ -233,7 +253,7 @@
                 <div class="about-wrapper">
                     <div class="about-image-container">
                             <div class="image-container about-img animate-box animate__animated animated" data-animate="animate__fadeInLeft">
-                            <img src="{{ asset('assets/images/running/carry.png') }}" alt="About Us Img">
+                            <img src="{{ asset('assets/images/running/carry.png') }}" alt="Peserta lari Balikpapan Coastal Running">
                             <!-- <div class="card card-about-detail animate-box animate__animated animated-delay-slow" data-animate="animate__fadeInUp">
                                 <h4>Balikpapan Coastal Run is a premier running destination where passion, performance, and people come together.</h4>
                                 <a href="#about" class="link-wrapper">
