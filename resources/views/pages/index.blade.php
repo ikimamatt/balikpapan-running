@@ -145,7 +145,7 @@
         <!-- Banner Home Section -->
         <div class="pb-0" id="home" style="padding-top: 0;">
             <div class="banner-home-container" style="border-radius: 0; background-image: url('{{ asset('assets/images/running/jumbotron2.png') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
-                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.72); z-index: -1;"></div>
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.4); z-index: -1;"></div>
                 <div class="hero-container">
                     <div class="bcr-hero-wrapper">
                         <div class="bcr-hero-left animate-box animate__animated animated" data-animate="animate__fadeInLeft">
@@ -157,7 +157,7 @@
 
                             <!-- Official Tagline -->
                             <div class="bcr-tagline-wrapper" >
-                                <img src="{{ asset('assets/images/running/CARRY THE MILES-05.png') }}" alt="CARRY THE MILES" class="img-fluid" style="max-height: 40px;">
+                                <img src="{{ asset('assets/images/running/CARRY THE MILES-01.png') }}" alt="CARRY THE MILES" class="img-fluid" style="max-height: 40px;">
                             </div>
 
                             <div style="display: flex; flex-direction: column; align-items: stretch; width: max-content; max-width: 100%;">
@@ -524,7 +524,6 @@
                         <!-- 12.9K -->
                         <div class="col">
                             <div class="bcr-price-card bcr-price-card--featured animate-box animate__animated animated" data-animate="animate__fadeInUp">
-                                <div class="bcr-price-featured-label">Most Popular</div>
                                 <div class="bcr-price-badge" style="background:var(--accent-color-2);">Coastal Run</div>
                                 <div class="bcr-price-distance">12.9K</div>
                                 <div class="bcr-price-amount">Rp 260<span class="bcr-price-unit">K</span></div>
@@ -711,7 +710,7 @@
                                 </div>
                                 <h4 class="secondary-accent">Balikpapan Coastal Running</h4>
                                 <p class="secondary-accent">Experience the biggest coastal running event in East Kalimantan. Join thousands of runners and conquer the coastal track.</p>
-                                <div class="footer-social-icon">
+                                <!-- <div class="footer-social-icon">
                                     <a href="#" class="social-icon">
                                         <i class="fa-brands fa-facebook"></i>
                                     </a>
@@ -727,7 +726,7 @@
                                     <a href="#" class="social-icon">
                                         <i class="fa-brands fa-linkedin"></i>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     
@@ -736,7 +735,7 @@
                                 <h4 class="secondary-accent">Contact Info</h4>
                                 <div class="underline-primary-accent"></div>
                                 <div class="d-flex flex-column gspace-2">
-                                    <div class="d-flex flex-row gspace-2 align-items-start">
+                                    <div class="d-flex flex-row gspace-1 align-items-start">
                                         <div>
                                             <div class="contact-icon footer-icon">
                                                 <i class="fa-solid fa-phone-volume"></i>
@@ -744,7 +743,7 @@
                                         </div>
                                         <div class="d-flex flex-column">
                                             <h6 class="contact-info-heading">Phone Number</h6>
-                                            <h5 class="secondary-accent"> <a style="color: inherit; text-decoration: none;" href="tel:+628123456789">+62 812-3456-789</a></h5>
+                                            <h5 class="secondary-accent"> <a style="color: inherit; text-decoration: none;" href="tel:+6282154538586">082154538586</a></h5>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row gspace-1 align-items-start">
@@ -755,7 +754,7 @@
                                         </div>
                                         <div class="d-flex flex-column">
                                             <h6 class="contact-info-heading">Email Address</h6>
-                                            <h5 class="secondary-accent"><a style="color: inherit; text-decoration: none;" href="mailto:[EMAIL_ADDRESS]">hello@balikpapanrunning.com</a></h5>
+                                            <h5 class="secondary-accent"><a style="color: inherit; text-decoration: none;" href="mailto:bpncoastalrunning@gmail.com">bpncoastalrunning@gmail.com</a></h5>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row gspace-1 align-items-start">
