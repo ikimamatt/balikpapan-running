@@ -68,7 +68,7 @@ Version: 1.0.0
     --secondary: #FFFFFF;
     --text-color: #5F5F5F;
     --accent-color: #010e1e;
-    --accent-color-2: #ff5455;
+    --accent-color-2: #f05832;
     --accent-color-3: #F2F2F2;
     --accent-color-4: #FAFAFA;
     --accent-color-5: #E4E4E4;
@@ -3749,13 +3749,11 @@ ul {
 }
 
 .footer-logo-container {
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
+    padding: 0;
 }
 
 .footer-logo-container img {
-    width: 75%;
+    width: 80%;
 }
 
 .footer-social-icon {
@@ -3999,7 +3997,7 @@ ul {
     display: block;
     width: 40px;
     height: 3px;
-    background: #f05832;
+    background: #fff;
     flex-shrink: 0;
     border-radius: 2px;
 }
@@ -4105,6 +4103,8 @@ ul {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
 
 @media (max-width: 575px) {
     .bcr-merch-grid {
