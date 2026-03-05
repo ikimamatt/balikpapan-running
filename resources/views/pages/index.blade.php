@@ -68,7 +68,7 @@
                     <!-- Logo Container -->
                     <div class="logo-container">
                         <a class="navbar-brand fw-bold" href="#">
-                            <img src="{{ asset('assets/images/running/BCR Logo-01.png') }}" alt="Logo" class="img-fluid" style="height: 50px;">
+                            <img src="{{ asset('assets/images/running/BCR Logo-02.png') }}" alt="Logo" class="img-fluid" style="height: 50px;">
                         </a>
                     </div>
                 
@@ -144,7 +144,7 @@
     <main>
         <!-- Banner Home Section -->
         <div class="pb-0" id="home" style="padding-top: 0;">
-            <div class="banner-home-container" style="border-radius: 0; background-image: url('{{ asset('assets/images/running/jumbotron_kv.png') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
+            <div class="banner-home-container" style="border-radius: 0; background-image: url('{{ asset('assets/images/running/jumbotron2.png') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
                 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.72); z-index: -1;"></div>
                 <div class="hero-container">
                     <div class="bcr-hero-wrapper">
@@ -189,7 +189,7 @@
 
                                 <div class="bcr-stats-row" style="width: 100%; border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 16px; margin-top: 16px;">
                                     <div class="bcr-stat">
-                                        <span class="bcr-stat-num">5,000+</span>
+                                        <span class="bcr-stat-num">2,000+</span>
                                         <span class="bcr-stat-label">Runners</span>
                                     </div>
                                     <div class="bcr-stat-divider"></div>
@@ -197,11 +197,11 @@
                                         <span class="bcr-stat-num">2</span>
                                         <span class="bcr-stat-label">Categories</span>
                                     </div>
-                                    <div class="bcr-stat-divider"></div>
+                                    <!-- <div class="bcr-stat-divider"></div>
                                     <div class="bcr-stat">
                                         <span class="bcr-stat-num">12.9K</span>
                                         <span class="bcr-stat-label">Longest Route</span>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -215,11 +215,11 @@
                                 <div class="bcr-event-meta">
                                     <div class="bcr-meta-item">
                                         <i class="fa-solid fa-calendar-days"></i>
-                                        <span>15 March 2026</span>
+                                        <span>3 May 2026</span>
                                     </div>
                                     <div class="bcr-meta-item">
                                         <i class="fa-solid fa-map-pin"></i>
-                                        <span>Pantai Balikpapan, Kalimantan Timur</span>
+                                        <span><a style="color: inherit; text-decoration: none;" href="https://maps.app.goo.gl/yFoqUm56N9iS6JzA9">Kantor Walikota Balikpapan</a></span>
                                     </div>
                                     <div class="bcr-meta-item">
                                         <i class="fa-solid fa-person-running"></i>
@@ -246,9 +246,12 @@
             </div>
         </div>
         
-        <!-- About Section -->
-        <div class="section" id="about" style="background-image: url('{{ asset('assets/images/running/background (1).png') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.72); z-index: -1;"></div>
+        <!-- Combined About and Registration Section with Single Background -->
+        <div style="background-image: url('{{ asset('assets/images/running/background4.png') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.5); z-index: -1;"></div>
+
+            <!-- About Section -->
+            <div class="section pb-0" id="about">
             <div class="hero-container">
                 <div class="about-wrapper">
                     <div class="about-image-container">
@@ -285,7 +288,7 @@
                                     <div class="row row-cols-md-3 row-cols-1 grid-spacer-4">
                                         <div class="col">
                                             <div class="about-highlight-box">
-                                                <span class="counter about-highlight-text" data-target="5000" style="color: white;"></span>
+                                                <span class="counter about-highlight-text" data-target="2000" style="color: white;"></span>
                                                 <h5 style="color: white;">Runners</h5>
                                             </div>
                                         </div>
@@ -486,8 +489,7 @@
         </div> -->
 
         <!-- Registration Pricing Section -->
-        <div class="section" id="pricing" style="background-image: url('{{ asset('assets/images/running/jumbotron_kv.png') }}'); background-size: cover; background-position: center 40%; position: relative; z-index: 1;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,14,30,0.72); z-index: -1;"></div>
+        <div class="section pt-0" id="pricing" style="padding-top: 100px !important;">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-5">
                     <div class="text-center animate-box animate__animated animated" data-animate="animate__fadeInUp">
@@ -504,15 +506,15 @@
                             <div class="bcr-price-card animate-box animate__animated animated" data-animate="animate__fadeInUp">
                                 <div class="bcr-price-badge" style="background:var(--accent-color-9);">Fun Run</div>
                                 <div class="bcr-price-distance">5K</div>
-                                <div class="bcr-price-amount">Rp 150<span class="bcr-price-unit">K</span></div>
+                                <div class="bcr-price-amount">Rp 180<span class="bcr-price-unit">K</span></div>
                                 <div class="bcr-price-phase">Early Bird</div>
-                                <ul class="bcr-price-features">
+                                <!-- <ul class="bcr-price-features">
                                     <li><i class="fa-solid fa-check"></i> Race Bib &amp; Chip Timing</li>
                                     <li><i class="fa-solid fa-check"></i> Running Tee</li>
                                     <li><i class="fa-solid fa-check"></i> Finisher Medal</li>
                                     <li><i class="fa-solid fa-check"></i> Water &amp; Isotonic Station</li>
                                     <li><i class="fa-solid fa-check"></i> Post-Race Festival Access</li>
-                                </ul>
+                                </ul> -->
                                 <a href="#" class="btn btn-accent" style="width:100%;justify-content:space-between;">
                                     <span class="btn-title">Daftar Sekarang</span>
                                     <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
@@ -525,16 +527,16 @@
                                 <div class="bcr-price-featured-label">Most Popular</div>
                                 <div class="bcr-price-badge" style="background:var(--accent-color-2);">Coastal Run</div>
                                 <div class="bcr-price-distance">12.9K</div>
-                                <div class="bcr-price-amount">Rp 250<span class="bcr-price-unit">K</span></div>
+                                <div class="bcr-price-amount">Rp 260<span class="bcr-price-unit">K</span></div>
                                 <div class="bcr-price-phase">Early Bird</div>
-                                <ul class="bcr-price-features">
+                                <!-- <ul class="bcr-price-features">
                                     <li><i class="fa-solid fa-check"></i> Race Bib &amp; Chip Timing</li>
                                     <li><i class="fa-solid fa-check"></i> Premium Running Tee</li>
                                     <li><i class="fa-solid fa-check"></i> Exclusive Finisher Medal</li>
                                     <li><i class="fa-solid fa-check"></i> Water &amp; Isotonic Station</li>
                                     <li><i class="fa-solid fa-check"></i> Post-Race Festival Access</li>
                                     <li><i class="fa-solid fa-check"></i> Official Certificate</li>
-                                </ul>
+                                </ul> -->
                                 <a href="#" class="btn btn-accent" style="width:100%;justify-content:space-between;">
                                     <span class="btn-title">Daftar Sekarang</span>
                                     <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
@@ -547,7 +549,7 @@
         </div>
 
         <!-- Race Merch Section -->
-        <div class="section" id="merch" style="background-color: var(--primary);">
+        <div class="section pt-0" id="merch">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-5">
                     <div class="text-center animate-box animate__animated animated" data-animate="animate__fadeInUp">
@@ -607,13 +609,14 @@
                 </div>
             </div>
         </div>
+        </div>
 
 
         <!-- Sponsor Section -->
         <div class="bcr-sponsor-section">
             <div class="hero-container">
                 <div class="bcr-sponsor-wrapper animate-box animate__animated animated" data-animate="animate__fadeInUp">
-                    <span class="bcr-sponsor-label">Our Sponsors</span>
+                    <span class="bcr-sponsor-label">Organized By</span>
                     <div class="bcr-sponsor-logos">
                         <div class="bcr-sponsor-logo-wrap">
                             <img src="{{ asset('assets/images/sponsors/lexa.png') }}" alt="Lexa Event" class="bcr-sponsor-logo">
@@ -647,7 +650,7 @@
                         <div class="bcr-faq-header-right">
                             <a href="#contact" class="btn btn-accent">
                                 <span class="btn-title">Contact Us</span>
-                                <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+                                <!-- <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span> -->
                             </a>
                         </div>
                     </div>
@@ -700,11 +703,11 @@
         <div class="section pb-0 bg-accent-color">
             <div class="hero-container">
                 <div class="footer-content-container">
-                    <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 grid-spacer-2">
+                    <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
                         <div class="col">
                             <div class="d-flex flex-column gspace-2">
                                 <div class="footer-logo-container">
-                                    <img src="{{ asset('assets/images/running/BCR Logo-01.png') }}" alt="Logo" class="img-fluid" style="height: 60px;">
+                                    <img src="{{ asset('assets/images/running/pemkot.png') }}" alt="Logo" class="img-fluid" style="height: auto; max-height: 80px; object-fit: contain;">
                                 </div>
                                 <h4 class="secondary-accent">Balikpapan Coastal Running</h4>
                                 <p class="secondary-accent">Experience the biggest coastal running event in East Kalimantan. Join thousands of runners and conquer the coastal track.</p>
@@ -727,21 +730,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="d-flex flex-column gspace-2">
-                                <h4 class="secondary-accent">Quick Links</h4>
-                                <div class="underline-primary-accent"></div>
-                                <ul class="chevron-list">
-                                    <li><a href="#home">Home</a></li>
-                                    <li><a href="#about">About Event</a></li>
-                                    <li><a href="#categories">Categories</a></li>
-                                    <li><a href="#info">Race Info</a></li>
-                                    <li><a href="#rules">Race Rules</a></li>
-                                    <li><a href="#faq">FAQ</a></li>
-                                    <li><a href="#contact">Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    
                         <div class="col">
                             <div class="d-flex flex-column gspace-2">
                                 <h4 class="secondary-accent">Contact Info</h4>
@@ -755,7 +744,7 @@
                                         </div>
                                         <div class="d-flex flex-column">
                                             <h6 class="contact-info-heading">Phone Number</h6>
-                                            <h5 class="secondary-accent">+1 (800) 123-4567</h5>
+                                            <h5 class="secondary-accent"> <a style="color: inherit; text-decoration: none;" href="tel:+628123456789">+62 812-3456-789</a></h5>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row gspace-1 align-items-start">
@@ -766,7 +755,7 @@
                                         </div>
                                         <div class="d-flex flex-column">
                                             <h6 class="contact-info-heading">Email Address</h6>
-                                            <h5 class="secondary-accent">hello@balikpapanrunning.com</h5>
+                                            <h5 class="secondary-accent"><a style="color: inherit; text-decoration: none;" href="mailto:[EMAIL_ADDRESS]">hello@balikpapanrunning.com</a></h5>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row gspace-1 align-items-start">
@@ -777,35 +766,21 @@
                                         </div>
                                         <div class="d-flex flex-column">
                                             <h6 class="contact-info-heading">Location</h6>
-                                            <h5 class="secondary-accent">Balikpapan, East Kalimantan, Indonesia</h5>
+                                            <h5 class="secondary-accent"><a style="color: inherit; text-decoration: none;" href="https://maps.app.goo.gl/yFoqUm56N9iS6JzA9">Kantor Walikota Balikpapan</a></h5>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row gspace-1 align-items-start">
+                                        <div>
+                                            <div class="contact-icon footer-icon">
+                                                <i class="fa-solid fa-instagram"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <h6 class="contact-info-heading">Instagram</h6>
+                                            <h5 class="secondary-accent"><a style="color: inherit; text-decoration: none;" href="https://www.instagram.com/bpncoastalrunning/" target="_blank">@bpncoastalrunning</a></h5>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex flex-column gspace-2">
-                                <h4 class="secondary-accent">Subscribe Newsletter</h4>
-                                <div class="underline-primary-accent"></div>
-                                <p class="secondary-accent">Get the latest updates on race info, promotions & running tips.</p>
-                                <div id="newsletter-success" class="alert success hidden">
-                                    <span class="check-icon"><i class="fa-solid fa-2xl fa-check"></i></span>
-                                    <p class="text-center">Thank you! Form submitted successfully.</p>
-                                </div>
-                            
-                                <div id="newsletter-error" class="alert error hidden">
-                                    <span class="cross-icon"><i class="fa-solid fa-2xl fa-xmark"></i></span>
-                                    <p class="text-center">Oops! Form submission failed. Please try again.</p>
-                                </div>
-                                <form id="newsletter-form" action="{{ asset('assets/php/form-newsletter.php') }}" class="form" method="post">
-                                    <input type="email" id="newsletter" name="newsletter" placeholder="Subscribe to Our Newsletter">
-                                    <button type="submit" class="btn btn-accent">
-                                        <span class="btn-title">Subscribe Now</span>
-                                        <span class="icon-circle">
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                        </span>
-                                    </button>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -834,9 +809,9 @@
     <script src="{{ asset('assets/js/swiper-script.js') }}"></script>
     <script src="{{ asset('assets/js/video_embedded.js') }}"></script>
     <script>
-        // BCR Countdown Timer — Race Day: 15 March 2026
+        // BCR Countdown Timer — Race Day: 03 May 2026
         (function(){
-            var target = new Date('2026-03-15T06:00:00+08:00').getTime();
+            var target = new Date('2026-05-03T00:00:00+08:00').getTime();
             function pad(n){ return String(n).padStart(2,'0'); }
             function tick(){
                 var now = Date.now();
