@@ -3748,13 +3748,14 @@ ul {
     gap: 120px 0px;
 }
 
-.footer-logo-container {
+/* .footer-logo-container {
     padding: 0;
+    margin-bottom: 20px;
 }
 
 .footer-logo-container img {
     width: 80%;
-}
+} */
 
 .footer-social-icon {
     display: flex;
@@ -4146,15 +4147,15 @@ ul {
 }
 
 .bcr-sponsor-logo-wrap {
-    padding: 0 40px;
+    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .bcr-sponsor-logo {
-    max-height: 50px;
-    max-width: 160px;
+    max-height: 80px;
+    max-width: 190px;
     width: auto;
     object-fit: contain;
     filter: brightness(0) invert(1);
