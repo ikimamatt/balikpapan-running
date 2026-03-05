@@ -618,11 +618,17 @@
                     <span class="bcr-sponsor-label">Organized By</span>
                     <div class="bcr-sponsor-logos">
                         <div class="bcr-sponsor-logo-wrap">
-                            <img src="{{ asset('assets/images/sponsors/lexa.png') }}" alt="Lexa Event" class="bcr-sponsor-logo">
+                            <img src="{{ asset('assets/images/sponsors/lexa.png') }}" alt="Lexa Event" class="bcr-sponsor-logo" style="max-height: 100px; max-width: 210px;">
                         </div>
                         <div class="bcr-sponsor-divider"></div>
                         <div class="bcr-sponsor-logo-wrap">
                             <img src="{{ asset('assets/images/sponsors/kepalabatu.png') }}" alt="Kepala Batu" class="bcr-sponsor-logo">
+                        </div>
+                    </div>
+                    <span class="bcr-sponsor-label">Official Ticketing Partner</span>
+                    <div class="bcr-sponsor-logos">
+                        <div class="bcr-sponsor-logo-wrap">
+                            <img src="{{ asset('assets/images/sponsors/yesplislogo_white.png') }}" alt="Lexa Event" class="bcr-sponsor-logo" style="max-height: 40px; max-width: 150px;">
                         </div>
                     </div>
                 </div>
@@ -708,7 +714,7 @@
                                 <div class="footer-logo-container">
                                     <img src="{{ asset('assets/images/running/pemkot.png') }}" alt="Logo" class="img-fluid" style="height: auto; max-height: 80px; object-fit: contain;">
                                 </div>
-                                <h4 class="secondary-accent">Balikpapan Coastal Running</h4>
+                                <h4 class="secondary-accent">BALIKPAPAN COASTAL RUNNING 2026</h4>
                                 <p class="secondary-accent">Experience the biggest coastal running event in East Kalimantan. Join thousands of runners and conquer the coastal track.</p>
                                 <!-- <div class="footer-social-icon">
                                     <a href="#" class="social-icon">
@@ -743,7 +749,7 @@
                                         </div>
                                         <div class="d-flex flex-column">
                                             <h6 class="contact-info-heading">Phone Number</h6>
-                                            <h5 class="secondary-accent"> <a style="color: inherit; text-decoration: none;" href="tel:+6282154538586">082154538586</a></h5>
+                                            <h5 class="secondary-accent"> <a style="color: inherit; text-decoration: none;" href="https://wa.me/6282154538586">082154538586</a></h5>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row gspace-1 align-items-start">
