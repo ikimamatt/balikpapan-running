@@ -113,12 +113,12 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#about">About</a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" href="#why-choose-us">Why Choose Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#service">Service</a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="#pricing">Registration Pricing</a>
                                 </li>
@@ -162,8 +162,8 @@
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#why-choose-us">Why Choose Us</a></li>
-                    <li><a href="#service">Service</a></li>
+                    <!-- <li><a href="#why-choose-us">Why Choose Us</a></li>
+                    <li><a href="#service">Service</a></li> -->
                     <li><a href="#pricing">Registration Pricing</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
