@@ -55,9 +55,40 @@
             transform: scale(1.02) !important;
             box-shadow: 0 4px 15px rgba(240, 88, 50, 0.4) !important;
         }
+
+        /* === Floating Scroll Element === */
+        #bcr-scroll-element {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 65px;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 10;
+            transform: translateY(0px);
+            transition: transform 0.08s linear, opacity 0.4s ease;
+            will-change: transform, opacity;
+        }
+        #bcr-scroll-element.is-visible {
+            opacity: 0.55;
+        }
+        @media (max-width: 768px) {
+            #bcr-scroll-element {
+                width: 40px;
+            }
+            #bcr-scroll-element.is-visible {
+                opacity: 0.45;
+            }
+        }
     </style>
 </head>
 <body>
+
+    <!-- Floating Scroll Decoration Element -->
+    <img id="bcr-scroll-element"
+         src="{{ asset('assets/images/running/elementscroll.png') }}"
+         alt=""
+         aria-hidden="true">
 
     <!-- Header Section -->
     <header>
@@ -833,6 +864,55 @@
             }
             tick();
             setInterval(tick, 1000);
+        })();
+    </script>
+
+    <script>
+        // === Floating Element: visible only between #about and #faq ===
+        (function () {
+            var el = document.getElementById('bcr-scroll-element');
+            if (!el) return;
+
+            var sectionAbout = document.getElementById('about');
+            var footerEl     = document.querySelector('footer');
+
+            function onScroll() {
+                var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+                // Gunakan posisi relatif viewport — konsisten di semua ukuran layar
+                var aboutRect  = sectionAbout ? sectionAbout.getBoundingClientRect() : null;
+                var footerRect = footerEl     ? footerEl.getBoundingClientRect()     : null;
+
+                // "after about" = section about sudah dilewati atau sedang di viewport
+                var afterAbout  = aboutRect  ? aboutRect.top  <= window.innerHeight : true;
+                // "before footer" = footer belum masuk ke viewport sama sekali
+                var beforeFooter = footerRect ? footerRect.top >= window.innerHeight : true;
+
+                var isInRange = afterAbout && beforeFooter;
+
+                if (isInRange) {
+                    el.classList.add('is-visible');
+                } else {
+                    el.classList.remove('is-visible');
+                }
+
+                // Parallax lambat — dihitung dari posisi relatif terhadap #about
+                if (isInRange && aboutRect) {
+                    var startY = sectionAbout.getBoundingClientRect().top + scrollY;
+                    var relativeScroll = scrollY - startY;
+                    var moveUp = relativeScroll * 0.10;
+                    var maxMove = window.innerHeight * 0.6;
+                    if (moveUp > maxMove) moveUp = maxMove;
+                    if (moveUp < 0) moveUp = 0;
+                    el.style.transform = 'translateY(-' + moveUp + 'px)';
+                } else if (!afterAbout) {
+                    el.style.transform = 'translateY(0px)';
+                }
+            }
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', onScroll);
+            onScroll();
         })();
     </script>
 </body>
