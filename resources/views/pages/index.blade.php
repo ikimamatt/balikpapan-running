@@ -106,7 +106,7 @@
                     <!-- Navbar Social Container -->
                     <div class="navbar-cta-container">
                         <div>
-                            <a href="#" class="btn btn-accent">
+                            <a href="https://www.yesplis.com/event/balikpapan-coastal-running-2026" class="btn btn-accent">
                                 <span class="btn-title" style="padding: 10px 15px; font-size: 14px;">Register Now!</span>
                             </a>
                         </div>
@@ -226,7 +226,7 @@
                                         <span>5K &bull; 12.9K</span>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-accent bcr-register-btn justify-content-center">
+                                <a href="https://www.yesplis.com/event/balikpapan-coastal-running-2026" class="btn btn-accent bcr-register-btn justify-content-center">
                                     <span class="btn-title">Register Now!</span>
                                 </a>
                             </div>
