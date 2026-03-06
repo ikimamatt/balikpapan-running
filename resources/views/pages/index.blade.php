@@ -85,10 +85,10 @@
 <body>
 
     <!-- Floating Scroll Decoration Element -->
-    <img id="bcr-scroll-element"
+    <!-- <img id="bcr-scroll-element"
          src="{{ asset('assets/images/running/elementscroll.png') }}"
          alt=""
-         aria-hidden="true">
+         aria-hidden="true"> -->
 
     <!-- Header Section -->
     <header>
@@ -245,15 +245,15 @@
                                 <p class="bcr-event-card-desc">Register now to get your exclusive race pack including running tee, finisher medal, and access to the post-run festival!</p>
                                 <div class="bcr-event-meta">
                                     <div class="bcr-meta-item">
-                                        <i class="fa-solid fa-calendar-days"></i>
+                                        <i class="fa-solid fa-calendar-days" style="color: #f05832;"></i>
                                         <span>3 May 2026</span>
                                     </div>
                                     <div class="bcr-meta-item">
-                                        <i class="fa-solid fa-map-pin"></i>
+                                        <i class="fa-solid fa-map-pin" style="color: #f05832;"></i>
                                         <span><a style="color: inherit; text-decoration: none;" href="https://maps.app.goo.gl/yFoqUm56N9iS6JzA9">Kantor Walikota Balikpapan</a></span>
                                     </div>
                                     <div class="bcr-meta-item">
-                                        <i class="fa-solid fa-person-running"></i>
+                                        <i class="fa-solid fa-person-running" style="color: #f05832;"></i>
                                         <span>5K &bull; 12.9K</span>
                                     </div>
                                 </div>
