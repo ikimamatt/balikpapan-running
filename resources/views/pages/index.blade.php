@@ -721,13 +721,13 @@
                             </button>
                             <div class="bcr-faq-answer">Ya, kami menerima berbagai metode pembayaran termasuk transfer bank, dompet digital (GoPay, OVO, Dana), dan kartu kredit/debit.</div>
                         </div>
-                        <div class="bcr-faq-item">
+                        <!-- <div class="bcr-faq-item">
                             <button class="bcr-faq-question" onclick="this.parentElement.classList.toggle('open')">
                                 <span>Bagaimana jika saya tidak bisa hadir setelah mendaftar?</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </button>
                             <div class="bcr-faq-answer">Biaya pendaftaran tidak dapat dikembalikan. Namun, Anda dapat melakukan transfer bib kepada peserta lain dengan menghubungi panitia minimal 7 hari sebelum acara.</div>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
